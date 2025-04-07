@@ -1,0 +1,39 @@
+[
+    {
+        "titulo":"El pasado nunca nos olvida:",
+        "id":"1",
+        "autor":"Daniel Jerez Torns",
+        "descripcion":"Un avión de combate desenterrado en las inmediaciones de El Prat, en Barcelona.Un periodista que investiga el asesinato de un amigo.Una policía que regresa al lugar donde pasó su infancia.El hallazgo en los terrenos de El Prat de Llobregat de los restos de un avión de combate alemán accidentado en un vuelo de exhibición en 1940, saca a la luz los restos del fuselaje y los huesos del piloto.",
+        "imagen":"assets/images/El_pasado_nunca_nos_olvida.jpg",
+        "categoria":"Historia",
+        "ubicacion":"Lote 3, "
+    },{
+        "titulo":"Los hombres del Norte",
+        "id":"2",
+        "autor":"John Haywood",
+        "descripcion":"Una historia de los vikingos alejada de mitos y leyendas. La narración más completa sobre su expansión geográfica; de Terranova a Bagdad, de Rusia a Francia o España.",
+        "imagen":"assets/images/los_hombres_del_norte.jpg",
+        "categoria":"Historia"
+    },{
+        "titulo":"Don Quijote de la Mancha",
+        "id":"3",
+        "autor":"Miguel de Cervantes Saavedra",
+        "descripcion":"La narración de las aventuras de Don Quijote han sido llevadas a diversos formatos artísticos: han inspirado cuadros, obras teatrales, películas e incluso versiones apócrifas. Un ejemplo fue el célebre Quijote de Avellaneda aparecido en 1614 y firmado por el licenciado Alonso Fernández de Avellaneda, pseudónimo de un autor todavía desconocido.",
+        "imagen":"assets/images/El_quijote.jpg",
+        "categoria":"Fantasia"
+    },{
+        "titulo":"El nombre del viento",
+        "id":"4",
+        "autor":"Patrick Rothfuss",
+        "descripcion":"En una posada en tierra de nadie, un hombre se dispone a relatar, por primera vez, la autentica historia de su vida. Una historia que únicamente el conoce y que ha quedado diluida tras los rumores, las conjeturas y los cuentos de taberna que le han convertido en un personaje legendario a quien todos daban ya por muerto: Kvothe... músico, mendigo, ladrón, estudiante, mago, heroe y asesino.",
+        "imagen":"assets/images/el nombre del viento.jpg",
+        "categoria":"Fantasia"
+    },{
+        "titulo":"Cada historia cuenta",
+        "id":"5",
+        "autor":"Varios autores",
+        "descripcion":"Cada historia cuenta es un libro que recopila relatos de personas con discapacidad y daño cerebral, mostrando sus experiencias y vivencias. Los beneficios de la venta se destinan a proyectos de la Fundación AINDACE.",
+        "imagen":"assets/images/cada_historia_cuenta.jpg",
+        "categoria":"Arte"
+    }
+]

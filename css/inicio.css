@@ -1,0 +1,59 @@
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.carousel-inner{
+    
+}
+.carousel-item{
+    height: 500px;
+}
+
+#tamLogo{
+    width: 8%;
+}
+
+#dLogo{
+    
+    display: flex;
+    justify-content: center;
+    background-color: #9BAF98  ;
+}
+header{
+    width: 100%;
+    
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-right: 20%;
+}
+
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #9BAF98;
+    padding: 50px;
+}
+.card{
+    min-width: 200px;
+    max-width: 400px;
+}
+
+
+footer{
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 1%;
+    font-family: Arial, sans-serif;
+}

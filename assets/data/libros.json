@@ -5,14 +5,16 @@
         "autor":"Daniel Jerez Torns",
         "descripcion":"Un avión de combate desenterrado en las inmediaciones de El Prat, en Barcelona.Un periodista que investiga el asesinato de un amigo.Una policía que regresa al lugar donde pasó su infancia.El hallazgo en los terrenos de El Prat de Llobregat de los restos de un avión de combate alemán accidentado en un vuelo de exhibición en 1940, saca a la luz los restos del fuselaje y los huesos del piloto.",
         "imagen":"assets/images/El_pasado_nunca_nos_olvida.jpg",
-        "categoria":"Historia",
-        "ubicacion":"Lote 3, "
+        "imagenInicio":"/assets/images/pasadonuncaolvida.jpg",
+        "categoria":"Historia"
+        
     },{
         "titulo":"Los hombres del Norte",
         "id":"2",
         "autor":"John Haywood",
         "descripcion":"Una historia de los vikingos alejada de mitos y leyendas. La narración más completa sobre su expansión geográfica; de Terranova a Bagdad, de Rusia a Francia o España.",
         "imagen":"assets/images/los_hombres_del_norte.jpg",
+        "imagenInicio":"/assets/images/hombresnorte.jpg",
         "categoria":"Historia"
     },{
         "titulo":"Don Quijote de la Mancha",
@@ -20,6 +22,7 @@
         "autor":"Miguel de Cervantes Saavedra",
         "descripcion":"La narración de las aventuras de Don Quijote han sido llevadas a diversos formatos artísticos: han inspirado cuadros, obras teatrales, películas e incluso versiones apócrifas. Un ejemplo fue el célebre Quijote de Avellaneda aparecido en 1614 y firmado por el licenciado Alonso Fernández de Avellaneda, pseudónimo de un autor todavía desconocido.",
         "imagen":"assets/images/El_quijote.jpg",
+        "imagenInicio":"/assets/images/donquijote.jpg",
         "categoria":"Fantasia"
     },{
         "titulo":"El nombre del viento",
@@ -27,6 +30,7 @@
         "autor":"Patrick Rothfuss",
         "descripcion":"En una posada en tierra de nadie, un hombre se dispone a relatar, por primera vez, la autentica historia de su vida. Una historia que únicamente el conoce y que ha quedado diluida tras los rumores, las conjeturas y los cuentos de taberna que le han convertido en un personaje legendario a quien todos daban ya por muerto: Kvothe... músico, mendigo, ladrón, estudiante, mago, heroe y asesino.",
         "imagen":"assets/images/el nombre del viento.jpg",
+        "imagenInicio":"/assets/images/nombreviento.jpg",
         "categoria":"Fantasia"
     },{
         "titulo":"Cada historia cuenta",
@@ -34,6 +38,1172 @@
         "autor":"Varios autores",
         "descripcion":"Cada historia cuenta es un libro que recopila relatos de personas con discapacidad y daño cerebral, mostrando sus experiencias y vivencias. Los beneficios de la venta se destinan a proyectos de la Fundación AINDACE.",
         "imagen":"assets/images/cada_historia_cuenta.jpg",
+        "imagenInicio":"/assets/images/Cadahistoriacuenta.jpg",
         "categoria":"Arte"
+    },{
+        "titulo": "Operación Cóndor",
+        "id": "6",
+        "autor": "Juan Gómez-Jurado",
+        "descripcion": "Un comando de élite debe rescatar a rehenes en una misión suicida en territorio enemigo.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Protocolo Phoenix",
+        "id": "7",
+        "autor": "Matthew Reilly",
+        "descripcion": "Carrera contra el tiempo para evitar que un arma biológica sea liberada en una capital europea.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Fuego en el Horizonte",
+        "id": "8",
+        "autor": "Tom Clancy",
+        "descripcion": "Un submarino nuclear desaparecido amenaza con desatar la tercera guerra mundial.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 5
+    },
+    {
+        "titulo": "El Código del Mercenario",
+        "id": "9",
+        "autor": "Brad Thor",
+        "descripcion": "Un ex Navy SEAL debe descifrar un código que contiene secretos de estado vitales.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Asalto al Kremlin",
+        "id": "10",
+        "autor": "Mark Greaney",
+        "descripcion": "Operación encubierta para evitar un golpe de estado en Rusia.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La Red Cobra",
+        "id": "11",
+        "autor": "Don Winslow",
+        "descripcion": "Un agente del DEA se infiltra en el cartel de drogas más peligroso de México.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Punto Crítico",
+        "id": "12",
+        "autor": "Lee Child",
+        "descripcion": "Jack Reacher se enfrenta a una organización paramilitar en las montañas de Colorado.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Tormenta Roja",
+        "id": "13",
+        "autor": "Clive Cussler",
+        "descripcion": "Batalla submarina durante la Guerra Fría que podría cambiar el curso de la historia.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Último Blanco",
+        "id": "14",
+        "autor": "Stephen Hunter",
+        "descripcion": "Un francotirador debe proteger a un testigo clave en un juicio contra el crimen organizado.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Furia Negra",
+        "id": "15",
+        "autor": "Andy McNab",
+        "descripcion": "Misión secreta del SAS en el desierto para neutralizar un arsenal químico.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Impacto Inminente",
+        "id": "16",
+        "autor": "James Rollins",
+        "descripcion": "Un científico y un comando Delta deben recuperar un meteorito con propiedades letales.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La Fórmula del Caos",
+        "id": "17",
+        "autor": "Boyd Morrison",
+        "descripcion": "Carrera para descifrar una ecuación matemática que predice ataques terroristas.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Noche de Lobos",
+        "id": "18",
+        "autor": "Gregg Hurwitz",
+        "descripcion": "Un exagente de la CIA debe proteger a una familia de sicarios profesionales.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Juego del Halcón",
+        "id": "19",
+        "autor": "Robert Ludlum",
+        "descripcion": "Juego de espías entre agencias de inteligencia con el destino de Europa en juego.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Silencio Nuclear",
+        "id": "20",
+        "autor": "Marc Cameron",
+        "descripcion": "Un agente del US Marshals Service debe transportar a un científico nuclear a través de Alaska.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 3
+    },
+    {
+        "titulo": "La Regla del Miedo",
+        "id": "21",
+        "autor": "Jack Carr",
+        "descripcion": "Un ex Navy SEAL busca venganza contra los que asesinaron a su familia.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Tormenta de Acero",
+        "id": "22",
+        "autor": "John Gilstrap",
+        "descripcion": "Rescate de rehenes en una planta nuclear tomada por terroristas.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El Círculo Oscuro",
+        "id": "23",
+        "autor": "Matthew Betley",
+        "descripcion": "Un veterano de Marines descubre una conspiración que llega hasta las altas esferas del poder.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Impacto Profundo",
+        "id": "24",
+        "autor": "A.J. Tata",
+        "descripcion": "Operación encubierta para evitar que Corea del Norte lance un misil nuclear.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La Hora Cero",
+        "id": "25",
+        "autor": "David Baldacci",
+        "descripcion": "Un agente del Servicio Secreto debe detener un ataque cibernético que paralizaría el país.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Fuego Cruzado",
+        "id": "26",
+        "autor": "Ben Coes",
+        "descripcion": "Un agente de la CIA se infiltra en un cartel de drogas para destruirlo desde dentro.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 5
+    },
+    {
+        "titulo": "El Último Asalto",
+        "id": "27",
+        "autor": "Chris Ryan",
+        "descripcion": "Misión del SAS para rescatar a periodistas secuestrados en zona de guerra.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Código de Honor",
+        "id": "28",
+        "autor": "W.E.B. Griffin",
+        "descripcion": "Historia de un grupo de operativos especiales durante la Guerra de Vietnam.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Punto de No Retorno",
+        "id": "29",
+        "autor": "Owen Laukkanen",
+        "descripcion": "Persecución a través del país de un fugitivo que sabe demasiado.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La Ley del Más Fuerte",
+        "id": "30",
+        "autor": "Brad Taylor",
+        "descripcion": "Un equipo de operaciones encubiertas debe detener el tráfico de armas químicas.",
+        "imagen": "",
+        "categoria": "accion",
+        "cantidad": 5
+    }, {
+        "titulo": "El Umbral de los Dioses",
+        "id": "31",
+        "autor": "John Gwynne",
+        "descripcion": "Un joven granjero descubre que es el heredero de un antiguo poder que puede salvar o destruir el mundo.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "La Canción de la Espada",
+        "id": "32",
+        "autor": "R.F. Kuang",
+        "descripcion": "Una joven guerrera debe dominar el arte prohibido de la magia de las runas para vengar a su pueblo.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Imperio de las Tormentas",
+        "id": "33",
+        "autor": "Evan Winter",
+        "descripcion": "En un mundo donde algunos pueden invocar poderes ancestrales, un guerrero busca venganza contra los que esclavizaron a su gente.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "La Reina Roja",
+        "id": "34",
+        "autor": "Victoria Aveyard",
+        "descripcion": "En un mundo dividido por el color de la sangre, una joven descubre que posee un poder que podría cambiar el equilibrio de poder.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Nombre del Viento",
+        "id": "35",
+        "autor": "Patrick Rothfuss",
+        "descripcion": "La leyenda de Kvothe, músico, mago y buscavidas, contada en primera persona.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "La Quinta Estación",
+        "id": "36",
+        "autor": "N.K. Jemisin",
+        "descripcion": "En un mundo con frecuentes cataclismos, quienes controlan la tierra tienen el poder de destruir o salvar civilizaciones.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La Rueda del Tiempo",
+        "id": "37",
+        "autor": "Robert Jordan",
+        "descripcion": "Un joven campesino descubre que puede ser la reencarnación de un poderoso ser destinado a salvar o destruir el mundo.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El Archivo de las Tormentas",
+        "id": "38",
+        "autor": "Brandon Sanderson",
+        "descripcion": "En un mundo de piedra y tormentas eternas, antiguas armas y poderes resurgen cuando más se necesitan.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "La Espada de Shannara",
+        "id": "39",
+        "autor": "Terry Brooks",
+        "descripcion": "Un medio elfo debe encontrar la espada mágica que puede derrotar al señor oscuro que amenaza las Cuatro Tierras.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Temor de un Hombre Sabio",
+        "id": "40",
+        "autor": "Patrick Rothfuss",
+        "descripcion": "Segunda parte de la legendaria historia de Kvothe, donde los peligros y misterios se intensifican.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Camino de los Reyes",
+        "id": "41",
+        "autor": "Brandon Sanderson",
+        "descripcion": "En el mundo de Roshar, donde las tormentas dan forma a la civilización, antiguas profecías comienzan a cumplirse.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "La Torre del Cuervo",
+        "id": "42",
+        "autor": "Tad Williams",
+        "descripcion": "Un joven sirviente se ve envuelto en una guerra entre magos mientras descubre su propio destino.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El Imperio Final",
+        "id": "43",
+        "autor": "Brandon Sanderson",
+        "descripcion": "En un mundo donde un lord oscuro gobierna eternamente, un grupo de rebeldes planea el mayor robo de la historia.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La Voz de las Espadas",
+        "id": "44",
+        "autor": "Joe Abercrombie",
+        "descripcion": "Sangrienta y épica historia de venganza en un mundo donde la magia está desapareciendo.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "El Brujo",
+        "id": "45",
+        "autor": "Andrzej Sapkowski",
+        "descripcion": "Las aventuras de Geralt de Rivia, un cazador de monstruos en un mundo lleno de magia y peligros.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La Maldición de Chalion",
+        "id": "46",
+        "autor": "Lois McMaster Bujold",
+        "descripcion": "Un guerrero caído en desgracia se convierte en tutor de una princesa en una corte llena de intrigas divinas.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El Ojo del Mundo",
+        "id": "47",
+        "autor": "Robert Jordan",
+        "descripcion": "Primer libro de la épica saga donde un grupo de jóvenes es perseguido por fuerzas oscuras en un mundo mágico.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "El Héroe de las Eras",
+        "id": "48",
+        "autor": "Brandon Sanderson",
+        "descripcion": "Conclusión de la trilogía donde los héroes deben enfrentar al lord oscuro en una batalla final.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La Ciudad de las Bestias",
+        "id": "49",
+        "autor": "Isabel Allende",
+        "descripcion": "Un joven se embarca en una aventura en la selva amazónica donde descubrirá criaturas mágicas y secretos ancestrales.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El Príncipe de la Niebla",
+        "id": "50",
+        "autor": "Carlos Ruiz Zafón",
+        "descripcion": "Un misterioso personaje concede deseos a cambio de terribles consecuencias en un pueblo costero.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La Historia Interminable",
+        "id": "51",
+        "autor": "Michael Ende",
+        "descripcion": "Un niño descubre un libro mágico que lo transporta al mundo de Fantasía, que está siendo consumido por la Nada.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "El Secreto del Unicornio",
+        "id": "52",
+        "autor": "Cornelia Funke",
+        "descripcion": "Dos hermanos descubren un libro que les permite viajar a un mundo donde los cuentos de hadas son reales.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "La Reina de los Condenados",
+        "id": "53",
+        "autor": "Anne Rice",
+        "descripcion": "Los vampiros más antiguos despiertan y amenazan con dominar tanto a vampiros como a humanos.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Mago de Terramar",
+        "id": "54",
+        "autor": "Ursula K. Le Guin",
+        "descripcion": "La historia de Ged, un joven mago que debe enfrentar las consecuencias de conjurar una sombra oscura.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "La Torre Oscura I: El Pistolero",
+        "id": "55",
+        "autor": "Stephen King",
+        "descripcion": "Roland, el último pistolero, persigue al Hombre de Negro a través de un mundo extrañamente familiar.",
+        "imagen": "",
+        "categoria": "fantasia",
+        "cantidad": 4
+    }, {
+        "titulo": "Armas, gérmenes y acero",
+        "id": "56",
+        "autor": "Jared Diamond",
+        "descripcion": "Una revolucionaria teoría sobre el desarrollo desigual de las civilizaciones humanas.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Breve historia del mundo",
+        "id": "57",
+        "autor": "Ernst H. Gombrich",
+        "descripcion": "Un recorrido accesible por los principales hitos de la historia universal.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Los cañones de agosto",
+        "id": "58",
+        "autor": "Barbara W. Tuchman",
+        "descripcion": "Relato detallado del primer mes de la Primera Guerra Mundial.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Historia de Roma",
+        "id": "59",
+        "autor": "Indro Montanelli",
+        "descripcion": "Narración amena del ascenso y caída del Imperio Romano.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La civilización del Occidente medieval",
+        "id": "60",
+        "autor": "Jacques Le Goff",
+        "descripcion": "Análisis profundo de la sociedad y cultura medieval europea.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El siglo de los genocidios",
+        "id": "61",
+        "autor": "Bernard Bruneteau",
+        "descripcion": "Estudio sobre los exterminios masivos del siglo XX.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Historia mínima de España",
+        "id": "62",
+        "autor": "Juan Pablo Fusi",
+        "descripcion": "Síntesis rigurosa de la historia española desde la prehistoria hasta hoy.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "La guerra civil española",
+        "id": "63",
+        "autor": "Hugh Thomas",
+        "descripcion": "Obra de referencia sobre el conflicto español de 1936-1939.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Historia de la belleza",
+        "id": "64",
+        "autor": "Umberto Eco",
+        "descripcion": "Evolución del concepto de belleza a través de las culturas y épocas.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "La rebelión de las masas",
+        "id": "65",
+        "autor": "José Ortega y Gasset",
+        "descripcion": "Análisis filosófico sobre el surgimiento del hombre-masa en el siglo XX.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Historia de la locura en la época clásica",
+        "id": "66",
+        "autor": "Michel Foucault",
+        "descripcion": "Estudio sobre la concepción de la locura desde el Renacimiento.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Historia del tiempo",
+        "id": "67",
+        "autor": "Stephen Hawking",
+        "descripcion": "Evolución de los conceptos sobre el tiempo en la física y cosmología.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Historia de las mujeres",
+        "id": "68",
+        "autor": "Georges Duby",
+        "descripcion": "La evolución del papel de la mujer en Occidente desde la antigüedad.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Historia de la vida privada",
+        "id": "69",
+        "autor": "Philippe Ariès",
+        "descripcion": "Cómo ha evolucionado la intimidad y vida cotidiana a través de los siglos.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Historia de la sexualidad",
+        "id": "70",
+        "autor": "Michel Foucault",
+        "descripcion": "Análisis de cómo las sociedades han regulado el comportamiento sexual.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Historia de la comida",
+        "id": "71",
+        "autor": "Felipe Fernández-Armesto",
+        "descripcion": "Cómo la alimentación ha moldeado civilizaciones y culturas.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Historia de la medicina",
+        "id": "72",
+        "autor": "Pedro Laín Entralgo",
+        "descripcion": "Evolución de las prácticas médicas desde la antigüedad.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Historia de la ciencia",
+        "id": "73",
+        "autor": "Carl Sagan",
+        "descripcion": "Relato del desarrollo del pensamiento científico a lo largo de los siglos.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Historia de la filosofía occidental",
+        "id": "74",
+        "autor": "Bertrand Russell",
+        "descripcion": "Compendio del pensamiento filosófico desde los presocráticos.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Historia del arte",
+        "id": "75",
+        "autor": "Ernst Gombrich",
+        "descripcion": "La evolución de las expresiones artísticas desde la prehistoria.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Historia de la música occidental",
+        "id": "76",
+        "autor": "Donald Jay Grout",
+        "descripcion": "Recorrido por los principales movimientos y compositores musicales.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Historia de la literatura universal",
+        "id": "77",
+        "autor": "Martín de Riquer",
+        "descripcion": "Panorama completo de las obras literarias fundamentales.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Historia de las religiones",
+        "id": "78",
+        "autor": "Mircea Eliade",
+        "descripcion": "Estudio comparado de las principales tradiciones religiosas.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Historia de la guerra",
+        "id": "79",
+        "autor": "John Keegan",
+        "descripcion": "Evolución de los conflictos bélicos desde la antigüedad.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Historia de las ideas políticas",
+        "id": "80",
+        "autor": "George Sabine",
+        "descripcion": "Desarrollo del pensamiento político occidental.",
+        "imagen": "",
+        "categoria": "historia",
+        "cantidad": 3
+    },{
+        "titulo": "Breves respuestas a las grandes preguntas",
+        "id": "81",
+        "autor": "Stephen Hawking",
+        "descripcion": "El último libro del célebre físico donde aborda las cuestiones esenciales del universo y nuestro futuro.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "El gen egoísta",
+        "id": "82",
+        "autor": "Richard Dawkins",
+        "descripcion": "Revolucionaria teoría sobre la evolución centrada en los genes como unidad de selección.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Cosmos",
+        "id": "83",
+        "autor": "Carl Sagan",
+        "descripcion": "Viaje a través del universo explorando la astronomía, la vida extraterrestre y nuestro lugar en el cosmos.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Una breve historia de casi todo",
+        "id": "84",
+        "autor": "Bill Bryson",
+        "descripcion": "Divertido y accesible recorrido por los grandes descubrimientos científicos.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El origen de las especies",
+        "id": "85",
+        "autor": "Charles Darwin",
+        "descripcion": "Obra fundacional de la biología evolutiva que presenta la teoría de la selección natural.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El universo elegante",
+        "id": "86",
+        "autor": "Brian Greene",
+        "descripcion": "Introducción a la teoría de cuerdas y la búsqueda de una teoría unificada de la física.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Siete breves lecciones de física",
+        "id": "87",
+        "autor": "Carlo Rovelli",
+        "descripcion": "Exquisita introducción a las ideas más fascinantes de la física moderna.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El andar del borracho",
+        "id": "88",
+        "autor": "Leonard Mlodinow",
+        "descripcion": "Cómo el azar y la aleatoriedad influyen en nuestras vidas, desde los negocios hasta la ciencia.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La estructura de las revoluciones científicas",
+        "id": "89",
+        "autor": "Thomas Kuhn",
+        "descripcion": "Análisis de cómo ocurren los cambios de paradigma en la ciencia.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El relojero ciego",
+        "id": "90",
+        "autor": "Richard Dawkins",
+        "descripcion": "Explicación de la evolución por selección natural y refutación del diseño inteligente.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El pulgar del panda",
+        "id": "91",
+        "autor": "Stephen Jay Gould",
+        "descripcion": "Ensayos sobre evolución y naturaleza que combinan ciencia y literatura.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "La vida en cuatro letras",
+        "id": "92",
+        "autor": "Carlos López-Otín",
+        "descripcion": "Claves del código genético y los misterios de la vida explicados por un científico español.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El cerebro humano",
+        "id": "93",
+        "autor": "David Eagleman",
+        "descripcion": "Viaje al órgano más complejo del cuerpo humano y sus misterios.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "La teoría del todo",
+        "id": "94",
+        "autor": "Stephen Hawking",
+        "descripcion": "Explicación accesible del origen y destino del universo.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El futuro de la humanidad",
+        "id": "95",
+        "autor": "Michio Kaku",
+        "descripcion": "Cómo la ciencia dará forma al destino de nuestra especie en el espacio.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "La física de lo imposible",
+        "id": "96",
+        "autor": "Michio Kaku",
+        "descripcion": "Análisis de tecnologías futuristas y su base científica real.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El ascenso del hombre",
+        "id": "97",
+        "autor": "Jacob Bronowski",
+        "descripcion": "Historia del desarrollo científico y cultural de la humanidad.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "La partícula divina",
+        "id": "98",
+        "autor": "Leon Lederman",
+        "descripcion": "Búsqueda del bosón de Higgs y los misterios de la física de partículas.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El error de Descartes",
+        "id": "99",
+        "autor": "Antonio Damasio",
+        "descripcion": "Revolucionaria teoría sobre el papel de las emociones en la racionalidad humana.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "La vida secreta de los árboles",
+        "id": "100",
+        "autor": "Peter Wohlleben",
+        "descripcion": "Sorprendentes descubrimientos sobre la comunicación y vida social de los árboles.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El mono desnudo",
+        "id": "101",
+        "autor": "Desmond Morris",
+        "descripcion": "Estudio zoológico del ser humano como especie animal.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El planeta de los simios",
+        "id": "102",
+        "autor": "Pierre Boulle",
+        "descripcion": "Novela que plantea profundas reflexiones sobre la evolución y la naturaleza humana.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La realidad no es lo que parece",
+        "id": "103",
+        "autor": "Carlo Rovelli",
+        "descripcion": "Fundamentos de la física cuántica y la naturaleza del espacio-tiempo.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El instinto del lenguaje",
+        "id": "104",
+        "autor": "Steven Pinker",
+        "descripcion": "Cómo la mente humana crea y adquiere el lenguaje.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 5
+    },
+    {
+        "titulo": "La mente nueva del emperador",
+        "id": "105",
+        "autor": "Roger Penrose",
+        "descripcion": "Profundo análisis sobre la conciencia, la física cuántica y la inteligencia artificial.",
+        "imagen": "",
+        "categoria": "ciencia",
+        "cantidad": 4
+    },{
+        "titulo": "El monstruo de colores",
+        "id": "106",
+        "autor": "Anna Llenas",
+        "descripcion": "Un cuento sobre emociones que ayuda a los niños a identificar y gestionar sus sentimientos.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Donde viven los monstruos",
+        "id": "107",
+        "autor": "Maurice Sendak",
+        "descripcion": "La aventura de Max, un niño que viaja a una tierra habitada por monstruos.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Elmer",
+        "id": "108",
+        "autor": "David McKee",
+        "descripcion": "Las aventuras de Elmer, un elefante de colores que celebra la diversidad.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 3
+    },
+    {
+        "titulo": "La oruga glotona",
+        "id": "109",
+        "autor": "Eric Carle",
+        "descripcion": "Libro interactivo que sigue el ciclo de vida de una oruga hasta convertirse en mariposa.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Adivina cuánto te quiero",
+        "id": "110",
+        "autor": "Sam McBratney",
+        "descripcion": "Una tierna historia sobre el amor entre una liebre pequeña y su padre.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El grúfalo",
+        "id": "111",
+        "autor": "Julia Donaldson",
+        "descripcion": "Un ratón inteligente inventa un monstruo imaginario para asustar a sus depredadores.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Las jirafas no pueden bailar",
+        "id": "112",
+        "autor": "Giles Andreae",
+        "descripcion": "Una historia sobre aceptar nuestras diferencias y encontrar nuestra propia música.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El pollo Pepe",
+        "id": "113",
+        "autor": "Nick Denchfield",
+        "descripcion": "Libro pop-up interactivo sobre un pollo que crece mucho por comer demasiado.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Orejas de mariposa",
+        "id": "114",
+        "autor": "Luisa Aguilar",
+        "descripcion": "Una niña aprende a aceptar sus diferencias con imaginación y positividad.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Elmer y la canción",
+        "id": "115",
+        "autor": "David McKee",
+        "descripcion": "Elmer ayuda a un nuevo amigo a encontrar su propia voz y canción.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 4
+    },
+    {
+        "titulo": "La pequeña oruga glotona: Un libro de colores",
+        "id": "116",
+        "autor": "Eric Carle",
+        "descripcion": "Libro para aprender los colores con la famosa oruga como protagonista.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 3
+    },
+    {
+        "titulo": "¿A qué sabe la luna?",
+        "id": "117",
+        "autor": "Michael Grejniec",
+        "descripcion": "Los animales trabajan juntos para descubrir el sabor de la luna.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 5
+    },
+    {
+        "titulo": "El topo que quería saber quién se había hecho aquello en su cabeza",
+        "id": "118",
+        "autor": "Werner Holzwarth",
+        "descripcion": "Divertida historia sobre un topo que investiga un misterioso incidente en su cabeza.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Te quiero (casi siempre)",
+        "id": "119",
+        "autor": "Anna Llenas",
+        "descripcion": "Una historia sobre el amor y la aceptación de las diferencias en las relaciones.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El libro de los cerdos",
+        "id": "120",
+        "autor": "Anthony Browne",
+        "descripcion": "Una familia aprende una lección sobre compartir las responsabilidades del hogar.",
+        "imagen": "",
+        "categoria": "infantil",
+        "cantidad": 4
+    }, {
+        "titulo": "Historia del Arte",
+        "id": "121",
+        "autor": "E.H. Gombrich",
+        "descripcion": "Una introducción accesible y completa al arte desde la prehistoria hasta el siglo XX.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Los secretos de las obras de arte",
+        "id": "122",
+        "autor": "Rainer Hagen",
+        "descripcion": "Análisis detallado de 100 obras maestras de la pintura universal.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El ABC del Arte",
+        "id": "123",
+        "autor": "Phaidon Press",
+        "descripcion": "Guía ilustrada de los movimientos, técnicas y conceptos artísticos fundamentales.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Arte Moderno",
+        "id": "124",
+        "autor": "Hans Werner Holzwarth",
+        "descripcion": "Compendio de los principales artistas y movimientos desde 1870 hasta la actualidad.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Arte Contemporáneo",
+        "id": "125",
+        "autor": "Julian Stallabrass",
+        "descripcion": "Exploración crítica del arte desde 1960 hasta nuestros días.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 3
+    },
+    {
+        "titulo": "La Historia del Arte Feminista",
+        "id": "126",
+        "autor": "Whitney Chadwick",
+        "descripcion": "Estudio sobre el papel de la mujer en el arte y su representación.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Poder del Arte",
+        "id": "127",
+        "autor": "Simon Schama",
+        "descripcion": "Análisis de obras maestras que cambiaron el curso de la historia del arte.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 5
+    },
+    {
+        "titulo": "Arte Latinoamericano",
+        "id": "128",
+        "autor": "Edward Sullivan",
+        "descripcion": "Panorama completo del arte latinoamericano del siglo XX.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 3
+    },
+    {
+        "titulo": "El Arte del Color",
+        "id": "129",
+        "autor": "Johannes Itten",
+        "descripcion": "Teoría fundamental sobre el uso del color en las artes visuales.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 4
+    },
+    {
+        "titulo": "Mirar",
+        "id": "130",
+        "autor": "John Berger",
+        "descripcion": "Ensayos revolucionarios sobre nuestra manera de ver y entender el arte.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 5
+    },
+    {
+        "titulo": "El Arte en la Era de lo Global",
+        "id": "131",
+        "autor": "Hans Belting",
+        "descripcion": "Estudio sobre cómo la globalización ha transformado el arte contemporáneo.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Arte y Visualidad",
+        "id": "132",
+        "autor": "William J. Mitchell",
+        "descripcion": "Exploración de cómo las tecnologías visuales han cambiado nuestro concepto del arte.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Arte como Terapia",
+        "id": "133",
+        "autor": "Alain de Botton",
+        "descripcion": "Enfoque innovador sobre cómo el arte puede ayudarnos en nuestra vida cotidiana.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 3
+    },
+    {
+        "titulo": "Arte y Miedo",
+        "id": "134",
+        "autor": "David Bayles",
+        "descripcion": "Reflexiones sobre los obstáculos psicológicos en el proceso creativo.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 4
+    },
+    {
+        "titulo": "El Arte del Siglo XXI",
+        "id": "135",
+        "autor": "Francesco Poli",
+        "descripcion": "Guía actualizada de las tendencias y artistas más relevantes del nuevo milenio.",
+        "imagen": "",
+        "categoria": "arte",
+        "cantidad": 5
     }
+
 ]

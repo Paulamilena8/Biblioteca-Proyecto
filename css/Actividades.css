@@ -1,0 +1,133 @@
+/*header*/
+#tamLogo{
+    width: 10%;
+}
+
+#dLogo{
+    
+    display: flex;
+    justify-content: center;
+    background-color: #BFAE99 ;
+}
+header{
+    width: 100%;
+    
+}
+.d-block{
+    width: 100%;
+    height:auto;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-right: 20%;
+}
+
+/*end header */
+
+/*body*/
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .actividad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .actividad img {
+    max-width: 80%;
+    border-radius: 10px;
+  }
+ 
+  .actividad p {
+    text-align: center;
+    color: #555;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    color: #654c3e;
+    text-align: center;
+    margin: 40px 0 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    border-bottom: 2px solid #f39c12;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+/*fuentes*/
+h1, h2, h3, h4 {
+  font-family: 'Rubik', sans-serif;
+}
+
+body, p, a, footer {
+  font-family: 'Inter', sans-serif;
+}
+
+/*end body*/
+
+
+/*Footer*/
+
+footer {
+  width: 100%;
+  background-color: #654c3e;
+  color: white;
+  padding: 2% 1%;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.footer-column h5 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #f8e9e0;
+}
+
+.footer-column a {
+  color: #f39c12;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85rem;
+}
+#icono_footer{
+  color: black;
+}

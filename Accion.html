@@ -8,7 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- links para nuestro css y script-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/inicio.css">
+     <!--fuentes-->
+     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@600&display=swap" rel="stylesheet">
     <script src="js/inicio.js" defer></script>
   </head>
 
@@ -16,97 +19,96 @@
   
 
  
-  <header>
-    <div id="dLogo"><img src="assets/images/logo.png" alt="" id="tamLogo"></div>
-     <!--nav-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    
-      <div class="container-fluid">
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categorías
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="categoria.html">Acción</a></li>
-                <li><a class="dropdown-item" href="categoria.html">Fantasia</a></li>
-                <li><a class="dropdown-item" href="categoria.html">Historia</a></li>
-                <li><a class="dropdown-item" href="categoria.html">Ciencia</a></li>
-                <li><a class="dropdown-item" href="categoria.html">Infantil</a></li>
-                <li><a class="dropdown-item" href="categoria.html">Arte</a></li>
-              </ul>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Actividades</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Perfil</a>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
-    </nav>
-  </header>
+  
 
-  <body>
-    
-   
-</body>
-
-<footer >
-  <div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; text-align: left;">
+<body>
+    <header>
+      <div id="dLogo"><img src="assets/images/logo.png" alt="" id="tamLogo"></div>
+       <!--nav-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
       
-      <!-- Aviso Legal -->
-      <div style="flex: 1; padding: 5px; font-size: small;">
+        <div class="container-fluid">
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorías
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="categoria.html">Acción</a></li>
+                  <li><a class="dropdown-item" href="categoria.html">Fantasia</a></li>
+                  <li><a class="dropdown-item" href="categoria.html">Historia</a></li>
+                  <li><a class="dropdown-item" href="categoria.html">Ciencia</a></li>
+                  <li><a class="dropdown-item" href="categoria.html">Infantil</a></li>
+                  <li><a class="dropdown-item" href="categoria.html">Arte</a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Actividades</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Perfil</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <footer>
+      <div class="footer-container">
+        <!-- Aviso Legal -->
+        <div class="footer-column">
           <h5>Aviso Legal</h5>
           <p>Esta biblioteca cumple con las normativas de protección de datos y derechos de autor.</p>
-          <a href="#" style="color: #f39c12; text-decoration: none;">Más información</a>
-      </div>
-
-      <!-- Contacto y Horario de Atención-->
-      <div style="flex: 1; padding: 5px; font-size: small; ">
+          <a href="#">Más información</a>
+        </div>
+    
+        <!-- Contacto y Horario de Atención -->
+        <div class="footer-column">
           <h5>Contacto</h5>
           <p>Email: contacto@biblioteca.com</p>
           <p>Tel: +123 456 789</p>
           <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
           <p>Sábados: 10:00 AM - 5:00 PM</p>
-      </div>
-
-      <!-- Sugerencias -->
-      <div style="flex: 1; padding: 10px; font-size: small;">
+        </div>
+    
+        <!-- Sugerencias -->
+        <div class="footer-column">
           <h5>Sugerencias y quejas</h5>
-          <a href="#" style="color: #f39c12; text-decoration: none;">Más información</a>
-      </div>
-
-      <!-- Redes Sociales -->
-      <div style="flex: 1; padding: 5px; font-size: small;">
+          <a href="#">Más información</a>
+        </div>
+    
+        <!-- Redes Sociales -->
+    <!-- Redes Sociales -->
+        <div class="footer-column">
           <h5>Redes Sociales</h5>
-          <a href="#" style="color: white; margin-right: 10px;">Facebook</a>
-          <a href="#" style="color: white; margin-right: 10px;">Twitter</a>
-          <a href="#" style="color: white;">Instagram</a>
-      </div>
-
-      <!-- Ubicación -->
-      <div style="flex: 1; padding: 5px; font-size: small;">
+          <a href="#" target="_blank"><i class="fab fa-facebook-f" id="icono_footer"></i> Facebook</a>
+          <a href="#" target="_blank"><i class="fab fa-twitter" id="icono_footer"></i> Twitter</a>
+          <a href="#" target="_blank"><i class="fab fa-instagram" id="icono_footer"></i> Instagram</a>
+        </div>
+    
+    
+        <!-- Ubicación -->
+        <div class="footer-column">
           <h5>Ubicación</h5>
           <p>Calle 123, Ciudad, País</p>
-          <a href="#" style="color: #f39c12; text-decoration: none;">Ver en mapa</a>
+          <a href="#">Ver en mapa</a>
+        </div>
       </div>
-  </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2025 Biblioteca Pública. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+</body>
 
-  <div style="text-align: center; margin-top: 10px; ">
-      <p>&copy; 2025 Biblioteca Pública. Todos los derechos reservados.</p>
-  </div>
 
-  
-</footer>
 
 </html>

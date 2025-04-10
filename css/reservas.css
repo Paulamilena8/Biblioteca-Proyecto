@@ -1,0 +1,138 @@
+/*header*/
+#tamLogo{
+    width: 8%;
+}
+
+#dLogo{
+    
+    display: flex;
+    justify-content: center;
+    background-color: #9BAF98  ;
+}
+header{
+    width: 100%;
+    
+}
+#nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-right: 20%;
+    
+}
+/*fin header*/
+
+main {
+    
+    margin-top: 5rem !important ;
+    margin-bottom: 5rem !important;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .infoReservas h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #9BAF98;
+    padding-bottom: 0.5rem;
+  }
+  
+  .infoReservas article {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 6px solid #9BAF98;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  
+  
+  .infoReservas h2 {
+    color: #34495e;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .infoReservas p,
+  .infoReservas li {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .infoReservas strong {
+    color: #2c3e50;
+  }
+  
+  .infoReservas ol {
+    padding-left: 1.2rem;
+    list-style-type: decimal;
+}
+  
+/*fuentes*/
+h1, h2, h3, h4 {
+  font-family: 'Rubik', sans-serif;
+}
+
+body, p, a, footer {
+  font-family: 'Inter', sans-serif;
+}
+
+/*Footer*/
+
+footer {
+  width: 100%;
+  background-color: #654c3e;
+  color: white;
+  padding: 2% 1%;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.footer-column h5 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #f8e9e0;
+}
+
+.footer-column a {
+  color: #f39c12;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85rem;
+}
+#icono_footer{
+  color: black;
+}

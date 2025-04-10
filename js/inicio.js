@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     //declarar los arrays
     let titulos = [];
     let descripciones = [];
-    let imagenes = [];
+    let imagenesInicio = [];
+    let imagenes=[];
+    let autores=[];
+    let ids=[];
 
     //obtener el json 
     fetch('assets/data/libros.json').then(objeto => {
@@ -21,10 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log(libro);
             titulos.push(libro.titulo);
             descripciones.push(libro.descripcion);
+            imagenesInicio.push(libro.imagenInicio);
             imagenes.push(libro.imagen);
+            autores.push(libro.autor);
+            ids.push(libro.id);
         });
         //iniciamos la funcion de rellenar el carousel
         carousel();
+        recomendaciones();
     });
 
 
@@ -38,8 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for(let i=0;i<5;i++){
             let titulo=titulos[i];
             let desc=descripciones[i];
-            let imagenURL=imagenes[i];
-            console.log(titulo, desc, imagenURL);
+            let imagenURL=imagenesInicio[i];
 
             let activo="carousel-item";
             if(i==0){
@@ -47,13 +53,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             contenedor.innerHTML+=`
             <div class="${activo}">
-              <img src="${imagenURL}" class="d-block w-100" alt="imagen de ${titulo}" tiltle="imagen de ${titulo}" >
+              <div class="imagen-inicio-container">
+                <img src="${imagenURL}" class="d-block" alt="imagen de ${titulo}" tiltle="imagen de ${titulo}" >
+              </div>
               <div class="carousel-caption d-none d-md-block">
                 <h5>${titulo}</h5>
                 <p>${desc}</p>
               </div>
             </div>`;
 
+            //generamos los botones para ajustatrlos segun bootsrtap
             let numero=i+1;
             if(i==0){
                 botones.innerHTML+=`<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="${i}" class="active" aria-current="true" aria-label="Slide ${numero}"></button>`;
@@ -63,5 +72,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    function recomendaciones(){
 
+        let contenedorCartas =document.getElementById('cartas-container');
+
+        for(let i=0;i<5;i++){
+            let tituloCarta=titulos[i];
+            let autorCarta=autores[i];
+            let imagenURLCarta=imagenes[i];
+            let id=ids[i];
+
+            console.log("cartas" +tituloCarta, autorCarta, imagenURLCarta);
+
+
+            contenedorCartas.innerHTML+=`      
+            <div class="grid-item" onclick="verDetalleLibro('${id}')">
+                <div class="card">
+                <div class="contenedor-imagen">
+                <img src="${imagenURLCarta}" class="card-img-top" alt="imagen del libro ${tituloCarta}" title="imagen del libro ${tituloCarta}">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">${tituloCarta}</h5>
+                    <p class="card-text"><em>${autorCarta}</em></p>
+                    <a href="#" class="btn btn-primary" ><i class="bi bi-bookmark-heart-fill"></i>
+                    </a>
+                    <a href="#" class="btn btn-secondary">Reservar</a>
+                </div>
+                </div>
+            </div>`;
+        }
+        
+    };
 });
+
+function verDetalleLibro(id) {
+    localStorage.setItem("libroSeleccionado", id);
+    window.location.href = "libro.html";
+    
+  }

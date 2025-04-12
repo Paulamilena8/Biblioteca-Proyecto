@@ -1,89 +1,98 @@
 /*header*/
 #tamLogo{
-    width: 8%;
+  width: 10%;
 }
 
 #dLogo{
-    
-    display: flex;
-    justify-content: center;
-    background-color: #9BAF98  ;
+  
+  display: flex;
+  justify-content: center;
+  background-color: #BFAE99 ;
 }
 header{
-    width: 100%;
-    
+  width: 100%;
+  
 }
+.carousel-caption{
+  background-color: rgba(68, 67, 67, 0.747);
+  border-radius: 10px;
+  padding: 20px;
+}
+
 #nav {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-right: 20%;
-    
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-right: 20%;
 }
 /*fin header*/
-
+/* Estructura principal */
 main {
-    
-    margin-top: 5rem !important ;
-    margin-bottom: 5rem !important;
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .infoReservas h1 {
-    font-size: 2.2rem;
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-    border-bottom: 3px solid #9BAF98;
-    padding-bottom: 0.5rem;
-  }
-  
-  .infoReservas article {
-    background-color: #ffffff;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-left: 6px solid #9BAF98;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
-  }
-  
-  
-  
-  .infoReservas h2 {
-    color: #34495e;
-    font-size: 1.5rem;
-    margin-bottom: 0.8rem;
-  }
-  
-  .infoReservas p,
-  .infoReservas li {
-    color: #555;
-    line-height: 1.6;
-    font-size: 1rem;
-  }
-  
-  .infoReservas strong {
-    color: #2c3e50;
-  }
-  
-  .infoReservas ol {
-    padding-left: 1.2rem;
-    list-style-type: decimal;
+  margin: 5rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
-/*fuentes*/
+
+/* Título principal */
+.infoReservas h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #BFAE99;
+  padding-bottom: 0.5rem;
+}
+
+/* Estilo para artículos */
+.infoReservas article {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 6px solid #BFAE99;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infoReservas article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Subtítulos y contenido */
+.infoReservas h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 0.8rem;
+}
+
+.infoReservas p,
+.infoReservas li {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.infoReservas strong {
+  color: #2c3e50;
+}
+
+.infoReservas ol {
+  padding-left: 1.2rem;
+  list-style-type: decimal;
+}
+
+/* Fuentes */
 h1, h2, h3, h4 {
   font-family: 'Rubik', sans-serif;
 }
 
-body, p, a, footer {
+body, p, a, footer, li {
   font-family: 'Inter', sans-serif;
 }
+
 
 /*Footer*/
 

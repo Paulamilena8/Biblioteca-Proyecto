@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+     <!--fuentes-->
+     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/perfil.css">
+  </head>
+  <body>
+    <header>
+        <div id="dLogo"><img src="assets/images/logo.png" alt="" id="tamLogo"></div>
+         <!--nav-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        
+          <div class="container-fluid">
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Todos</a></li>
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Fantasia</a></li>
+                    <li><a class="dropdown-item" href="#">Historia</a></li>
+                    <li><a class="dropdown-item" href="#">Ciencia</a></li>
+                    <li><a class="dropdown-item" href="#">Infantil</a></li>
+                    <li><a class="dropdown-item" href="#">Arte</a></li>
+                  </ul>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Actividades.html">Actividades</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Reservas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Perfil</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="perfil-header">     
+          <img src="assets/images/avatar.png" alt="Avatar del usuario">
+          <div class="info">
+            <h2>Juan Pérez</h2>
+            <p><strong>Email:</strong> juan.perez@email.com</p>
+            <p><strong>Miembro desde:</strong> Enero 2022</p>
+          </div>
+        </div>
+    
+        <div class="estadisticas">  
+          <div class="card">
+            <h3>Reservas Activas</h3>
+            <p>2</p>
+          </div>
+          <div class="card">
+            <h3>Préstamos Totales</h3>
+            <p>12</p>
+          </div>
+          <div class="card">
+            <h3>Libros Devueltos</h3>
+            <p>11</p>
+          </div>
+        </div>
+    
+        <section>
+          <h2>Reservas Activas</h2>
+          <table>
+
+            <thead>
+
+              <tr>
+                <th>Título</th>
+
+                <th>Autor</th>
+                <th>Fecha de Reserva</th>
+                <th>Recoger antes de</th>
+                
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>18/04/2025</td>
+                <td>25/04/2025</td>
+                
+              </tr>
+
+              <tr>
+                <td>El nombre del viento</td>
+                <td>Patrick Rothfuss</td>
+                <td>19/04/2025</td>
+                <td>26/04/2025</td>
+                
+              </tr>
+
+            </tbody>
+          </table>
+        </section>
+    
+        <section>
+          <h2>Historial de Préstamos</h2>
+          <table>
+            <thead>
+              <tr>
+
+
+                <th>Título</th>
+                <th>Fecha Préstamo</th>
+                <th>Fecha Devolución</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cien años de soledad</td>
+                <td>01/03/2025</td>
+                <td>15/03/2025</td>
+                <td>Devuelto</td>
+              </tr>
+              <tr>
+                <td>Crónica de una muerte anunciada</td>
+                <td>15/03/2025</td>
+                <td>—</td>
+                <td>Pendiente</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+    
+       
+      </main>
+    
+
+      
+
+      <footer>
+        <div class="footer-container">
+          <!-- Aviso Legal -->
+          <div class="footer-column">
+            <h5>Aviso Legal</h5>
+            <p>Esta biblioteca cumple con las normativas de protección de datos y derechos de autor.</p>
+            <a href="#">Más información</a>
+          </div>
+      
+          <!-- Contacto y Horario de Atención -->
+          <div class="footer-column">
+            <h5>Contacto</h5>
+            <p>Email: contacto@biblioteca.com</p>
+            <p>Tel: +123 456 789</p>
+            <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+            <p>Sábados: 10:00 AM - 5:00 PM</p>
+          </div>
+      
+          <!-- Sugerencias -->
+          <div class="footer-column">
+            <h5>Sugerencias y quejas</h5>
+            <a href="#">Más información</a>
+          </div>
+      
+          <!-- Redes Sociales -->
+      <!-- Redes Sociales -->
+          <div class="footer-column">
+            <h5>Redes Sociales</h5>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f" id="icono_footer"></i> Facebook</a>
+            <a href="#" target="_blank"><i class="fab fa-twitter" id="icono_footer"></i> Twitter</a>
+            <a href="#" target="_blank"><i class="fab fa-instagram" id="icono_footer"></i> Instagram</a>
+          </div>
+      
+      
+          <!-- Ubicación -->
+          <div class="footer-column">
+            <h5>Ubicación</h5>
+            <p>Calle 123, Ciudad, País</p>
+            <a href="#">Ver en mapa</a>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Biblioteca Pública. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>

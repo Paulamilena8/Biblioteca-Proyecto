@@ -163,7 +163,7 @@
     "cantidad": 2
   },
   {
-    "titulo": "El Capitán Trueno: El pueblo del fuego sagrado",
+    "titulo": "El pueblo del fuego sagrado",
     "id": "19",
     "autor": "Víctor Mora",
     "descripcion": "El Capitán Trueno y su equipo enfrentan nuevas aventuras en tierras lejanas.",
@@ -303,7 +303,7 @@
     "id": "34",
     "autor": "Ursula K. Le Guin",
     "descripcion": "Tenar, sacerdotisa de las Tumbas, cuestiona su fe al conocer a un extraño prisionero.",
-    "imagen": "",
+    "imagen": "assets/images/las_tumbas_de_atuan.jpg",
     "categoria": "fantasia",
     "cantidad": 3
   },
@@ -312,7 +312,7 @@
     "id": "35",
     "autor": "Travis Baldree",
     "descripcion": "Una guerrera retirada abre una cafetería en una ciudad mágica, buscando una vida tranquila.",
-    "imagen": "assets/images/las_tumbas_de_atuan.jpg",
+    "imagen": "assets/images/el_cafe_de_las_leyendas.jpg",
     "categoria": "fantasia",
     "cantidad": 4
   },
@@ -448,7 +448,7 @@
     "id": "50",
     "autor": "Neil MacGregor",
     "descripcion": "Un recorrido por los objetos que han dado forma a la historia de la humanidad, desde el principio de los tiempos hasta la actualidad.",
-    "imagen": "",
+    "imagen": "assets/images/la_historia_del_mundo_en_cien_objetos.jpg",
     "categoria": "historia",
     "cantidad": 4
   },
@@ -458,7 +458,7 @@
     "id": "51",
     "autor": "Stephen Hawking",
     "descripcion": "Una introducción accesible a los misterios del universo, explorando la física y la cosmología.",
-    "imagen": "assets/images/historia_del_mundo_en_cien_ob.jpg",
+    "imagen": "assets/images/breve_historia_del_mundo.jpg",
     "categoria": "ciencia",
     "cantidad": 5
   },
@@ -683,7 +683,7 @@
     "id": "76",
     "autor": "Lewis Carroll",
     "descripcion": "Alicia sigue a un conejo blanco y cae en un mundo extraño lleno de criaturas y situaciones absurdas.",
-    "imagen": "",
+    "imagen": "assets/images/alicia_en_el_pais_de_las_maravillas.jpg",
     "categoria": "infantil",
     "cantidad": 4
   },
@@ -692,7 +692,7 @@
     "id": "77",
     "autor": "Carlo Collodi",
     "descripcion": "La historia de un muñeco de madera que quiere convertirse en un niño de verdad y enfrenta muchos desafíos.",
-    "imagen": "",
+    "imagen": "assets/images/pinocho.jpg",
     "categoria": "infantil",
     "cantidad": 5
   },
@@ -701,7 +701,7 @@
     "id": "78",
     "autor": "Amelia Potts",
     "descripcion": "Una colección de historias tradicionales narradas por la abuela Amelia para sus nietos.",
-    "imagen": "",
+    "imagen": "assets/images/cuentos_de_la_abuela.jpg",
     "categoria": "infantil",
     "cantidad": 6
   },
@@ -710,7 +710,7 @@
     "id": "79",
     "autor": "E.B. White",
     "descripcion": "La historia de una cerdita llamada Wilbur y su amistad con una araña llamada Carlota.",
-    "imagen": "",
+    "imagen": "assets/images/la_telaraña_de_carlona.jpg",
     "categoria": "infantil",
     "cantidad": 5
   },
@@ -719,7 +719,7 @@
     "id": "80",
     "autor": "L. Frank Baum",
     "descripcion": "Dorothy, acompañada de sus nuevos amigos, emprende un viaje para encontrar al mago de Oz y regresar a casa.",
-    "imagen": "",
+    "imagen": "assets/images/el_mago_de_oz.jpg",
     "categoria": "infantil",
     "cantidad": 6
   },
@@ -728,16 +728,16 @@
     "id": "81",
     "autor": "Eric Carle",
     "descripcion": "La historia de una oruga que come mucho y experimenta una transformación sorprendente.",
-    "imagen": "",
+    "imagen": "assets/images/la_pequeña_oruga_glotona.jpg",
     "categoria": "infantil",
     "cantidad": 5
   },
   {
-    "titulo": "El oso que amaba las flores",
+    "titulo": "¿Puedo mirar tu regalo?",
     "id": "82",
     "autor": "Guido Van Genechten",
     "descripcion": "Un oso curioso que comienza a amar las flores y busca aprender más sobre ellas.",
-    "imagen": "",
+    "imagen": "assets/images/puedo_mirar_tu_regalo.jpg",
     "categoria": "infantil",
     "cantidad": 4
   },
@@ -746,7 +746,7 @@
     "id": "83",
     "autor": "Kenneth Grahame",
     "descripcion": "Una aventura sobre los animales del bosque, especialmente el topo, la nutria y el sapo, y sus vivencias.",
-    "imagen": "",
+    "imagen": "assets/images/el_viento_en_los_sauces.jpg",
     "categoria": "infantil",
     "cantidad": 5
   },
@@ -755,7 +755,7 @@
     "id": "84",
     "autor": "Tradicional",
     "descripcion": "La historia clásica de los tres cerditos que construyen sus casas y enfrentan al lobo feroz.",
-    "imagen": "",
+    "imagen": "assets/images/los_tres_cerditos.jpg",
     "categoria": "infantil",
     "cantidad": 6
   },
@@ -764,25 +764,25 @@
     "id": "85",
     "autor": "Julia Donaldson",
     "descripcion": "Un ratón ingenioso que engaña a un monstruo llamado Grúfalo para salvar su vida.",
-    "imagen": "",
+    "imagen": "assets/images/grafulo.jpg",
     "categoria": "infantil",
     "cantidad": 5
   },
   {
-    "titulo": "La casa de los conejos",
+    "titulo": "La casa de los animales",
     "id": "86",
     "autor": "Lois Ehlert",
     "descripcion": "Una historia sobre una familia de conejos que vive en una acogedora casa.",
-    "imagen": "",
+    "imagen": "assets/images/la_casa_de_los_animales.jpg",
     "categoria": "infantil",
     "cantidad": 4
   },
   {
-    "titulo": "El sueño de la tortuga",
+    "titulo": "El niño que tenía dos ojos",
     "id": "87",
     "autor": "José Luis García Sánchez",
     "descripcion": "Un cuento sobre una tortuga que sueña con aventuras, pero aprende a valorar su hogar.",
-    "imagen": "",
+    "imagen": "assets/images/el_niño_que_tenia_dos_ojos.jpg",
     "categoria": "infantil",
     "cantidad": 5
   },
@@ -791,7 +791,7 @@
     "id": "88",
     "autor": "Rudyard Kipling",
     "descripcion": "La historia de Mowgli, un niño criado por lobos en la jungla de India, y sus aventuras con los animales.",
-    "imagen": "",
+    "imagen": "assets/images/los_libros_de_la_selva.jpg",
     "categoria": "infantil",
     "cantidad": 6
   },
@@ -800,16 +800,16 @@
     "id": "89",
     "autor": "Hans Christian Andersen",
     "descripcion": "Un cuento clásico sobre un patito que es rechazado por su apariencia, pero luego se transforma en un hermoso cisne.",
-    "imagen": "",
+    "imagen": "assets/images/el_patito_feo.jpg",
     "categoria": "infantil",
     "cantidad": 4
   },
   {
-    "titulo": "Peppa Pig: El cumpleaños de Peppa",
+    "titulo": "Peppa Pig: El tesoro pirata",
     "id": "90",
     "autor": "Mark Baker",
-    "descripcion": "Peppa celebra su cumpleaños con su familia y amigos en este encantador cuento infantil.",
-    "imagen": "",
+    "descripcion": "¡Peppa Pig y sus amigos se han disfrazo de piratas y están buscando un tesoro escondido!",
+    "imagen": "assets/images/el_tesoro_pirata.jpg",
     "categoria": "infantil",
     "cantidad": 5
   },
@@ -818,7 +818,7 @@
     "id": "91",
     "autor": "E.H. Gombrich",
     "descripcion": "Una introducción accesible y completa al mundo del arte, desde las primeras pinturas hasta las tendencias contemporáneas.",
-    "imagen": "",
+    "imagen": "assets/images/historia_del_arte.jpg",
     "categoria": "arte",
     "cantidad": 5
   },
@@ -827,7 +827,7 @@
     "id": "92",
     "autor": "Sun Tzu",
     "descripcion": "Un tratado clásico sobre estrategias militares, que se aplica también en el arte de la gestión y la toma de decisiones.",
-    "imagen": "",
+    "imagen": "assets/images/el_arte_de_la_guerra.jpg",
     "categoria": "arte",
     "cantidad": 6
   },
@@ -836,7 +836,7 @@
     "id": "93",
     "autor": "José Antonio Ramos",
     "descripcion": "Un análisis de la famosa pintura de Hieronymus Bosch, desglosando sus significados y simbolismos ocultos.",
-    "imagen": "",
+    "imagen": "assets/images/el_jardin_de_las_delicias.jpg",
     "categoria": "arte",
     "cantidad": 4
   },
@@ -845,7 +845,7 @@
     "id": "94",
     "autor": "Varios autores",
     "descripcion": "Un recorrido por las obras más emblemáticas del Museo del Prado, explicando la historia detrás de cada una.",
-    "imagen": "",
+    "imagen": "assets/images/obras_maestras_del_museo_del_prado.jpg",
     "categoria": "arte",
     "cantidad": 5
   },
@@ -854,7 +854,7 @@
     "id": "95",
     "autor": "Herbert Read",
     "descripcion": "Un análisis del arte moderno desde sus orígenes hasta los movimientos más contemporáneos, como el cubismo y el surrealismo.",
-    "imagen": "",
+    "imagen": "assets/images/arte_moderno.jpg",
     "categoria": "arte",
     "cantidad": 6
   },
@@ -863,16 +863,16 @@
     "id": "96",
     "autor": "Varios autores",
     "descripcion": "Un libro dedicado al movimiento impresionista, explorando sus características y los artistas clave como Monet y Renoir.",
-    "imagen": "",
+    "imagen": "assets/images/impresionismo.jpg",
     "categoria": "arte",
     "cantidad": 4
   },
   {
-    "titulo": "La escultura en la historia",
+    "titulo": "Historia de la escultura",
     "id": "97",
-    "autor": "Varios autores",
+    "autor": "Juan José Martín González",
     "descripcion": "Un análisis de la evolución de la escultura a lo largo de los siglos, desde la antigua Grecia hasta el arte contemporáneo.",
-    "imagen": "",
+    "imagen": "assets/images/historia_de_la_escultura.jpg",
     "categoria": "arte",
     "cantidad": 5
   },
@@ -888,27 +888,27 @@
   {
     "titulo": "El arte de la pintura al óleo",
     "id": "99",
-    "autor": "David E. Carter",
+    "autor": "José María Parramón",
     "descripcion": "Una guía completa sobre las técnicas y materiales utilizados en la pintura al óleo, ideal tanto para principiantes como para artistas experimentados.",
-    "imagen": "",
+    "imagen": "assets/images/pintura_al_oleo.jpg",
     "categoria": "arte",
     "cantidad": 5
   },
   {
     "titulo": "Historia del arte contemporáneo",
     "id": "100",
-    "autor": "Thomas Crow",
+    "autor": "Varios autores",
     "descripcion": "Un análisis profundo sobre las corrientes de arte contemporáneo y los principales artistas que las han representado.",
-    "imagen": "",
+    "imagen": "assets/images/arte_contemporaneo.jpg",
     "categoria": "arte",
     "cantidad": 6
   },
   {
     "titulo": "Van Gogh: La vida",
     "id": "101",
-    "autor": "Steven Naifeh",
+    "autor": "Paula Cubo Rial",
     "descripcion": "Una biografía exhaustiva del famoso pintor Vincent van Gogh, explorando su vida y la influencia de su arte.",
-    "imagen": "",
+    "imagen": "assets/images/van_gogh.jpg",
     "categoria": "arte",
     "cantidad": 4
   },
@@ -926,7 +926,7 @@
     "id": "103",
     "autor": "Varios autores",
     "descripcion": "Una selección de las 100 obras más importantes de la historia del arte, con explicaciones detalladas de su significado y contexto.",
-    "imagen": "",
+    "imagen": "assets/images/el_cubismo.jpg",
     "categoria": "arte",
     "cantidad": 6
   },
@@ -935,52 +935,52 @@
     "id": "104",
     "autor": "Varios autores",
     "descripcion": "Un análisis del movimiento de arte pop, con énfasis en artistas como Andy Warhol y Roy Lichtenstein.",
-    "imagen": "",
+    "imagen": "assets/images/pop_art.jpg",
     "categoria": "arte",
     "cantidad": 4
   },
   {
     "titulo": "La fotografía como arte",
     "id": "105",
-    "autor": "Varios autores",
+    "autor": "Bruce Barnbaum",
     "descripcion": "Una guía sobre cómo la fotografía se ha convertido en una forma de arte, explorando sus técnicas y los grandes fotógrafos de la historia.",
-    "imagen": "",
+    "imagen": "assets/images/fotografia_como_arte.jpg",
     "categoria": "arte",
     "cantidad": 5
   },
   {
-    "titulo": "El arte de la cerámica",
+    "titulo": "El torno",
     "id": "106",
     "autor": "Varios autores",
     "descripcion": "Una exploración de la cerámica como forma de arte, desde sus orígenes hasta las técnicas más contemporáneas.",
-    "imagen": "",
+    "imagen": "assets/images/el_torno.jpg",
     "categoria": "arte",
     "cantidad": 6
   },
   {
-    "titulo": "El arte de los grandes maestros",
+    "titulo": "Como se hace el arte",
     "id": "107",
-    "autor": "Varios autores",
+    "autor": "Debra N. Mancoff ",
     "descripcion": "Un recorrido por las obras maestras de los grandes artistas, desde la antigüedad hasta la modernidad.",
-    "imagen": "",
+    "imagen": "assets/images/como_se_hace_el_arte.jpg",
     "categoria": "arte",
     "cantidad": 4
   },
   {
     "titulo": "El arte de los romanos",
     "id": "108",
-    "autor": "Varios autores",
+    "autor": "Martin Henig",
     "descripcion": "Un análisis sobre el arte en la antigua Roma, desde la escultura hasta la pintura y la arquitectura.",
-    "imagen": "",
+    "imagen": "assets/images/arte_romano.jpg",
     "categoria": "arte",
     "cantidad": 5
   },
   {
     "titulo": "El arte medieval",
     "id": "109",
-    "autor": "Varios autores",
+    "autor": "Xavier Barral",
     "descripcion": "Una mirada profunda al arte en la Edad Media, con un enfoque en el arte religioso y la arquitectura gótica.",
-    "imagen": "",
+    "imagen": "assets/images/arte_medieval.jpg",
     "categoria": "arte",
     "cantidad": 6
   },
@@ -989,16 +989,16 @@
     "id": "110",
     "autor": "Varios autores",
     "descripcion": "Un estudio sobre el movimiento barroco, explorando sus características y los artistas más destacados, como Caravaggio y Rembrandt.",
-    "imagen": "",
+    "imagen": "assets/images/arte_barroco.jpg",
     "categoria": "arte",
     "cantidad": 5
   },
   {
-    "titulo": "Los impresionistas",
+    "titulo": "Monet",
     "id": "111",
-    "autor": "Varios autores",
+    "autor": " Daniel Wildenstein ",
     "descripcion": "Una obra que analiza el movimiento impresionista, explorando sus técnicas y su impacto en el arte moderno.",
-    "imagen": "",
+    "imagen": "assets/images/monet.jpg",
     "categoria": "arte",
     "cantidad": 6
   }

@@ -76,16 +76,16 @@
         <div class="perfil-header">     
           <img src="assets/images/avatar.png" alt="Avatar del usuario">
           <div class="info">
-            <h2>Juan Pérez</h2>
-            <p><strong>Email:</strong> juan.perez@email.com</p>
-            <p><strong>Miembro desde:</strong> Enero 2022</p>
+            <h2 id="nombreUsuario"></h2>
+            <p id="emailUsuario"><strong>Email:</strong> juan.perez@email.com</p>
+            <p id="fechaMiembro"><strong>Miembro desde:</strong> Enero 2022</p>
           </div>
         </div>
     
         <div class="estadisticas">  
           <div class="card">
             <h3>Reservas Activas</h3>
-            <p>2</p>
+            <p id="reserva">2</p>
           </div>
           <div class="card">
             <h3>Préstamos Totales</h3>
@@ -98,68 +98,33 @@
         </div>
     
         <section>
-          <h2>Reservas Activas</h2>
-          <table>
-
+          <h2>Favoritos</h2>
+          <table id="tablaFav">
             <thead>
-
               <tr>
                 <th>Título</th>
-
                 <th>Autor</th>
-                <th>Fecha de Reserva</th>
-                <th>Recoger antes de</th>
-                
+                <th>Eliminar</th>
               </tr>
             </thead>
-
             <tbody>
-              <tr>
-                <td>1984</td>
-                <td>George Orwell</td>
-                <td>18/04/2025</td>
-                <td>25/04/2025</td>
-                
-              </tr>
-
-              <tr>
-                <td>El nombre del viento</td>
-                <td>Patrick Rothfuss</td>
-                <td>19/04/2025</td>
-                <td>26/04/2025</td>
-                
-              </tr>
-
+              <!-- Aquí se añade desde el JS -->
             </tbody>
           </table>
         </section>
+        
     
         <section>
-          <h2>Historial de Préstamos</h2>
-          <table>
+          <h2>Reservas</h2>
+          <table id="tablaReservas">
             <thead>
               <tr>
-
-
                 <th>Título</th>
-                <th>Fecha Préstamo</th>
-                <th>Fecha Devolución</th>
-                <th>Estado</th>
+                <th>Autor</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Cien años de soledad</td>
-                <td>01/03/2025</td>
-                <td>15/03/2025</td>
-                <td>Devuelto</td>
-              </tr>
-              <tr>
-                <td>Crónica de una muerte anunciada</td>
-                <td>15/03/2025</td>
-                <td>—</td>
-                <td>Pendiente</td>
-              </tr>
+              <!-- Aquí se añade desde el JS -->
             </tbody>
           </table>
         </section>

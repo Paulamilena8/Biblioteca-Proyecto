@@ -94,6 +94,26 @@ header{
   color: #8C8C8C;
 }
 
+.imagen {
+  position: relative;
+  width: 40%;
+  display: flex;
+  margin-top: 60px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .imagen:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+  }
+  img{
+    width: 100%;
+  }
+  
+
 @media screen and (max-width: 1366px) {
   #billboard button.prev.slick-arrow {
     left: 0;
@@ -104,11 +124,14 @@ header{
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1500px) {
   .banner-content h2.banner-title {
     font-size: 3.5em;
+    
   }
-
+.imagen{
+  margin: auto;
+}
   #billboard .main-slider {
     margin: 70px 0;
     padding: 0;

@@ -881,7 +881,7 @@
     "id": "98",
     "autor": "John Blockley",
     "descripcion": "Un libro práctico que enseña las técnicas fundamentales de la pintura en acuarela, desde lo más básico hasta lo avanzado.",
-    "imagen": "",
+    "imagen": "assets/images/El_gran_libro_de_la_acuarela.png",
     "categoria": "arte",
     "cantidad": 6
   },
@@ -917,7 +917,7 @@
     "id": "102",
     "autor": "Varios autores",
     "descripcion": "Un estudio detallado del movimiento cubista, explorando las obras de Picasso y Braque.",
-    "imagen": "",
+    "imagen": "assets/images/cubismo.png",
     "categoria": "arte",
     "cantidad": 5
   },

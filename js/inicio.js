@@ -9,6 +9,19 @@ document.addEventListener('DOMContentLoaded', function() {
     let autores=[];
     let ids=[];
 
+    let usuario = {
+        favoritos : [],
+        reservas : [],
+        nombre: "carlos",
+        email:"carlos@gmail.com",
+        fecha:"Enero 2025",
+        devueltos:"",
+    };
+    
+    localStorage.setItem("usuario", JSON.stringify(usuario));
+    
+    
+    
     //obtener el json 
     fetch('assets/data/libros.json').then(objeto => {
         if(!objeto.ok){
@@ -86,17 +99,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
             contenedorCartas.innerHTML+=`      
-            <div class="grid-item" onclick="verDetalleLibro('${id}')">
+            <div class="grid-item">
                 <div class="card">
-                <div class="contenedor-imagen">
+                <div class="contenedor-imagen" onclick="verDetalleLibro('${id}')">
                 <img src="${imagenURLCarta}" class="card-img-top" alt="imagen del libro ${tituloCarta}" title="imagen del libro ${tituloCarta}">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">${tituloCarta}</h5>
                     <p class="card-text"><em>${autorCarta}</em></p>
-                    <a href="#" class="btn btn-primary" ><i class="bi bi-bookmark-heart-fill"></i>
+                    <a href="#" class="btn btn-primary" onclick="favorito('${id}')"><i class="bi bi-bookmark-heart-fill"></i>
                     </a>
-                    <a href="#" class="btn btn-secondary">Reservar</a>
+                    <a href="#" class="btn btn-secondary" onclick="reservar('${id}')">Reservar</a>
                 </div>
                 </div>
             </div>`;
@@ -114,4 +127,21 @@ function verDetalleLibro(id) {
     localStorage.setItem("libroSeleccionado", id);
     window.location.href = "libro.html";
     
+  }
+
+  function favorito(id) {
+    
+    let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
+    usuarioRecuperado.favoritos.push(id);
+    localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
+    console.log(usuarioRecuperado);
+  }
+
+
+  
+  function reservar(id) {
+    let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
+    usuarioRecuperado.reservas.push(id);
+    localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
+    console.log(usuarioRecuperado);
   }

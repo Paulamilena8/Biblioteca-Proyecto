@@ -55,16 +55,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
         todosLosLibros.forEach(libro => {
             contenedor.innerHTML += `
-                <div class="grid-item" onclick="verDetalleLibro('${libro.id}')">
+                <div class="grid-item">
                     <div class="card">
-                        <div class="contenedor-imagen">
+                        <div class="contenedor-imagen" onclick="verDetalleLibro('${libro.id}')">
                             <img src="${libro.imagen}" class="card-img-top" alt="${libro.titulo}">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">${libro.titulo}</h5>
                             <p class="card-text"><em>${libro.autor}</em></p>
-                            <a href="#" class="btn btn-primary"><i class="bi bi-bookmark-heart-fill"></i></a>
-                            <a href="#" class="btn btn-secondary">Reservar</a>
+                            <a href="#" class="btn btn-primary" onclick="favorito('${libro.id}')"><i class="bi bi-bookmark-heart-fill"></i>
+                    </a>
+                    <a href="#" class="btn btn-secondary" onclick="reservar('${libro.id}')">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -81,3 +82,20 @@ function categorias(categoria){
     localStorage.setItem("categoria", categoria);
     window.location.reload();
 }
+
+function favorito(id) {
+    
+    let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
+    usuarioRecuperado.favoritos.push(id);
+    localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
+    console.log(usuarioRecuperado);
+  }
+
+
+  
+  function reservar(id) {
+    let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
+    usuarioRecuperado.reservas.push(id);
+    localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
+    console.log(usuarioRecuperado);
+  }

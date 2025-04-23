@@ -1,54 +1,59 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
+
     let todosLosLibros = [];
+
+    let categoriaEscogida=localStorage.getItem("categoria");
+    console.log(categoriaEscogida)
 
     fetch('assets/data/libros.json')
         .then(response => response.json())
         .then(libros => {
-
-            //categorias.html muestra todos los libros por defecto
-            todosLosLibros = libros;
-            mostrarLibros(libros); 
-            configurarFiltros();
+            libros.forEach(libro => {
+                if(libro.categoria === categoriaEscogida){
+                    todosLosLibros.push(libro);
+                }
+            });
+            if(categoriaEscogida === 'todos'){
+                todosLosLibros=libros;
+            }
+            
+            mostrarLibros(); 
+            titulo();
+           
         })
         .catch(error => console.error('Error al cargar libros:', error));
 
-        // se filtra por clase del menu y se define cada categoria 
-    function configurarFiltros() {
-        const links = document.querySelectorAll('.dropdown-item[info-categoria]');
-        
-        links.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault(); // Evita la navegación
-                const categoria = this.getAttribute('info-categoria');
-                filtrarLibros(categoria);
-            });
-        });
-    }
+       
 
-    // filtro por todos o categoria -- titulo
-    function filtrarLibros(categoria) {
-        let librosFiltrados;
-        const tituloCategoria = document.getElementById('titulo-categoria');
+       // filtro por todos o categoria -- titulo
+        function titulo() {
         
-        if (categoria === 'todos') {
-            librosFiltrados = todosLosLibros; 
+        const tituloCategoria = document.getElementById('titulo-categoria');
+            
+       if (categoriaEscogida === 'todos') {
+
             tituloCategoria.textContent = "Todos los libros";
         } else {
 
-            librosFiltrados = todosLosLibros.filter(libro => libro.categoria === categoria);
+            const nombreCategoria = categoriaEscogida.charAt(0).toUpperCase() + categoriaEscogida.slice(1);
             
-            const nombreCategoria = categoria.charAt(0).toUpperCase() + categoria.slice(1);
-            tituloCategoria.textContent = `Libros de ${nombreCategoria}`; // INFANTIL FALLA!!! ?
+            if(categoriaEscogida ==='infantil'){
+
+                tituloCategoria.textContent = `Libros infantiles`; 
+        }else{
+                tituloCategoria.textContent = `Libros de ${nombreCategoria}`; 
+            }
+            
         }
         
-        mostrarLibros(librosFiltrados);
     }
 
-    function mostrarLibros(libros) {
+    function mostrarLibros() {
         const contenedor = document.getElementById('cartas-container');
         contenedor.innerHTML = '';
 
-        libros.forEach(libro => {
+        todosLosLibros.forEach(libro => {
             contenedor.innerHTML += `
                 <div class="grid-item" onclick="verDetalleLibro('${libro.id}')">
                     <div class="card">
@@ -71,4 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function verDetalleLibro(id) {
     localStorage.setItem("libroSeleccionado", id);
     window.location.href = "libro.html";
+}
+function categorias(categoria){
+    localStorage.setItem("categoria", categoria);
+    window.location.reload();
 }

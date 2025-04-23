@@ -121,6 +121,7 @@ i{
 .contenedor-imagen{
   width: 295px;
   height: 430px;
+  margin: auto;
 }
 .grid-item{
   scale: 0.85;

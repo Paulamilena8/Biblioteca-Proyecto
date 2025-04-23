@@ -105,6 +105,11 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 });
 
+function categorias(categoria){
+    localStorage.setItem("categoria", categoria);
+    window.location.href = "categorias.html";
+}
+
 function verDetalleLibro(id) {
     localStorage.setItem("libroSeleccionado", id);
     window.location.href = "libro.html";

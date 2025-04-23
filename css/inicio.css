@@ -42,6 +42,7 @@
     scale: 0.90;
 }
 .contenedor-imagen{
+    margin: auto;
     width: 295px;
     height: 430px;
 }

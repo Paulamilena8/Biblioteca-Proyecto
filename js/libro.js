@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
         //Botones de favorito y reserva
         document.getElementById('botones').innerHTML+=`  
         <div>
-        <a href="#" class="btn btn-primary" style="padding: 12px" onclick="favorito('${libroId}')"><i class="bi bi-bookmark-heart-fill"></i>
+        <a href="#" class="btn btn-primary" style="padding: 12px" onclick="favorito('${libroId}','${titulo}')"><i class="bi bi-bookmark-heart-fill"></i>
         </a>
-        <a href="#" class="btn btn-secondary" onclick="reservar('${libroId}')">Reservar</a>
+        <a href="#" class="btn btn-secondary" onclick="reservar('${libroId}','${titulo}')">Reservar</a>
         </div>
         `;
      }
@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('imagen').innerHTML=`
             <img src="${imagen}" alt="banner" class="banner-image">
         `
-        document.getElementById('categoria').innerText="Categoria: "+categoria;
-
-         //Editar cantidad de libros disponibles
+        document.getElementById('categoria').innerText=categoria;
+        document.getElementById('categoria').setAttribute('onclick', `categorias('${categoria.toLowerCase()}')`);
+        //Editar cantidad de libros disponibles
     
          let usuario = JSON.parse(localStorage.getItem("usuario"));
          if (usuario.reservas.includes(libroId)){
@@ -86,21 +86,55 @@ function categorias(categoria){
     window.location.href = "categorias.html";
 }
 
-function favorito(id) {
+function favorito(id,titulo) {
     
     let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
-    usuarioRecuperado.favoritos.push(id);
+    if (!usuarioRecuperado.favoritos.includes(id)){
+        usuarioRecuperado.favoritos.push(id);
+       
+     }
     localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
     console.log(usuarioRecuperado);
+    alerta(titulo);
   }
 
 
   
-  function reservar(id) {
+  function reservar(id,titulo) {
     let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
-    usuarioRecuperado.reservas.push(id);
+    if (!usuarioRecuperado.reservas.includes(id)){
+        usuarioRecuperado.reservas.push(id);
+       
+     }
     localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
     console.log(usuarioRecuperado);
-    window.location.reload();
+    alerta(titulo);
+  }
 
+  
+  function alerta(titulo) {
+    document.body.innerHTML += `
+      <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="customModalLabel">Libro Añadido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              Has Añadido el libro ${titulo}.
+            </div>
+            <div class="modal-footer">
+              <button style="width: 100px;" type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick='aceptar()'>Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;  
+    // Mostrar el modal automáticamente
+    let myModal = new bootstrap.Modal(document.getElementById('customModal'));
+    myModal.show();
+  }
+  function aceptar() {
+    window.location.reload();
   }

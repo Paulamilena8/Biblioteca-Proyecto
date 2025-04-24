@@ -13,6 +13,16 @@ header{
     width: 100%;
     
 }
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+
 
 
 #nav {
@@ -56,10 +66,8 @@ h1, h2, h3, h4 {
  
 h2 {
     font-size: 2.2rem;
-    width: 80%;
     color: #654c3e;
     text-align: center;
-    margin: 40px 0 20px;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     border-bottom: 2px solid #f39c12;
@@ -110,7 +118,7 @@ i{
 }
 .cartas{
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 70px;
 }
 

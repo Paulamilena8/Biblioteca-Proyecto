@@ -63,9 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="card-body">
                             <h5 class="card-title">${libro.titulo}</h5>
                             <p class="card-text"><em>${libro.autor}</em></p>
-                            <a href="#" class="btn btn-primary" onclick="favorito('${libro.id}')"><i class="bi bi-bookmark-heart-fill"></i>
+                            <a href="#" class="btn btn-primary" onclick="favorito('${libro.id}','${libro.titulo}')"><i class="bi bi-bookmark-heart-fill"></i>
                     </a>
-                    <a href="#" class="btn btn-secondary" onclick="reservar('${libro.id}')">Reservar</a>
+                    <a href="#" class="btn btn-secondary" onclick="reservar('${libro.id}','${libro.titulo}')">Reservar</a>
                         </div>
                     </div>
                 </div>
@@ -83,19 +83,51 @@ function categorias(categoria){
     window.location.reload();
 }
 
-function favorito(id) {
+function favorito(id,titulo) {
     
     let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
-    usuarioRecuperado.favoritos.push(id);
+    if (!usuarioRecuperado.favoritos.includes(id)){
+        usuarioRecuperado.favoritos.push(id);
+       
+     }
     localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
     console.log(usuarioRecuperado);
+    alerta(titulo);
   }
 
 
   
-  function reservar(id) {
+  function reservar(id,titulo) {
     let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
-    usuarioRecuperado.reservas.push(id);
+    if (!usuarioRecuperado.reservas.includes(id)){
+        usuarioRecuperado.reservas.push(id);
+       
+     }
     localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
     console.log(usuarioRecuperado);
+    alerta(titulo);
+  }
+
+  function alerta(titulo) {
+    document.body.innerHTML += `
+      <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="customModalLabel">Libro Añadido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              Has Añadido el libro ${titulo}.
+            </div>
+            <div class="modal-footer">
+              <button style="width: 100px;" type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;  
+    // Mostrar el modal automáticamente
+    let myModal = new bootstrap.Modal(document.getElementById('customModal'));
+    myModal.show();
   }

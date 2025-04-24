@@ -341,3 +341,71 @@ footer {
   #icono_footer{
     color: black;
   }
+  .banner-content {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .banner-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  
+  #categoria {
+    font-size: 1rem;
+    color: #7c664b;
+  }
+
+  #autor {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  #botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #unidades {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 0.3rem;
+    color: #2b9348;
+  }
+  
+  .banner-content > div:last-child {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    color: #444;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5rem 1rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+ 

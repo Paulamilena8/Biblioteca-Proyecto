@@ -9,16 +9,26 @@ document.addEventListener('DOMContentLoaded', function() {
     let autores=[];
     let ids=[];
 
-    let usuario = {
-        favoritos : [],
-        reservas : [],
-        nombre: "carlos",
-        email:"carlos@gmail.com",
-        fecha:"Enero 2025",
-        devueltos:"",
-    };
+    let usuario=null;
+
+    usuario = JSON.parse(localStorage.getItem("usuario"));
+
+    if(usuario==null){
+        usuario = {
+            favoritos : [],
+            reservas : [],
+            nombre: "",
+            email:"",
+            fecha:"Enero 2025",
+            devueltos:"",
+        };    
+    }
+
     
     localStorage.setItem("usuario", JSON.stringify(usuario));
+    if(usuario.nombre=="" ){
+    login();
+    }
     
     
     
@@ -107,9 +117,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="card-body">
                     <h5 class="card-title">${tituloCarta}</h5>
                     <p class="card-text"><em>${autorCarta}</em></p>
-                    <a href="#" class="btn btn-primary" onclick="favorito('${id}')"><i class="bi bi-bookmark-heart-fill"></i>
+                    <a href="#" class="btn btn-primary" onclick="favorito('${id}','${tituloCarta}')"><i class="bi bi-bookmark-heart-fill"></i>
                     </a>
-                    <a href="#" class="btn btn-secondary" onclick="reservar('${id}')">Reservar</a>
+                    <a href="#" class="btn btn-secondary" onclick="reservar('${id}','${tituloCarta}')">Reservar</a>
                 </div>
                 </div>
             </div>`;
@@ -129,19 +139,103 @@ function verDetalleLibro(id) {
     
   }
 
-  function favorito(id) {
+  function favorito(id,titulo) {
     
     let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
-    usuarioRecuperado.favoritos.push(id);
+    if (!usuarioRecuperado.favoritos.includes(id)){
+        usuarioRecuperado.favoritos.push(id);
+       
+     }
     localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
     console.log(usuarioRecuperado);
+    alerta(titulo);
   }
 
 
   
-  function reservar(id) {
+  function reservar(id,titulo) {
     let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
-    usuarioRecuperado.reservas.push(id);
+    if (!usuarioRecuperado.reservas.includes(id)){
+        usuarioRecuperado.reservas.push(id);
+       
+     }
     localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
     console.log(usuarioRecuperado);
+    alerta(titulo);
   }
+
+  function alerta(titulo) {
+    document.body.innerHTML += `
+      <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="customModalLabel">Libro Añadido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+              Has Añadido el libro ${titulo}.
+            </div>
+            <div class="modal-footer">
+              <button style="width: 100px;" type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;  
+    // Mostrar el modal automáticamente
+    let myModal = new bootstrap.Modal(document.getElementById('customModal'));
+    myModal.show();
+  }
+
+  function login(){
+        document.body.innerHTML += `
+          <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="customModalLabel">Inicio de Sesión</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="loginForm">
+                    <div class="mb-3">
+                      <label for="userName" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nombreUsuario" required placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="mb-3">
+                      <label for="userEmail" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="emailUsuario" required placeholder="Ingresa tu correo">
+                    </div>
+                  </form>
+                  <div id="resultado"></div>
+                </div>
+                <div class="modal-footer">
+                  <button style="width: 100px;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button style="width: 100px;" type="submit" class="btn btn-primary" onclick="guardarDatos()">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+
+  let myModal = new bootstrap.Modal(document.getElementById('customModal'));
+  myModal.show();
+    
+  }
+  function guardarDatos() {
+    let usuarioRecuperado = JSON.parse(localStorage.getItem("usuario"));
+    let nombre =document.getElementById("nombreUsuario").value;
+    let email =document.getElementById("emailUsuario").value;
+
+    if(nombre=="" || email==""){
+        document.getElementById("resultado").innerHTML=`<div class="alert alert-danger" role="alert">Por favor, completa todos los campos.</div>`; 
+    }
+    
+    usuarioRecuperado.nombre=nombre;
+    usuarioRecuperado.email=email;
+    localStorage.setItem("usuario", JSON.stringify(usuarioRecuperado));
+    let myModal = bootstrap.Modal.getInstance(document.getElementById('customModal'));
+    myModal.hide();
+}
+  

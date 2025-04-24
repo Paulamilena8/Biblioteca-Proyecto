@@ -34,6 +34,15 @@ body {
     margin: 0;
     padding: 0;
   }
+  .contenido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
  
   .actividad {
     display: flex;

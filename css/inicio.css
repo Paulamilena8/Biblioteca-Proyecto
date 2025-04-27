@@ -156,6 +156,87 @@ i{
     color: black;
 }
 
+/*preguntas frecuentes*/
+.infoReservas h3 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    /*border-bottom: 3px solid #f39c12;*/
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Estilo para artículos */
+  .infoReservas article {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 6px solid #f39c12;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  .infoReservas article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Subtítulos y contenido */
+  .infoReservas h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 0.8rem;
+  }
+  
+  
+  .infoReservas p,
+  .infoReservas li {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .infoReservas strong {
+    color: #2c3e50;
+  }
+  
+  .infoReservas ol {
+    padding-left: 1.2rem;
+    list-style-type: decimal;
+  }
+  
+
+.mas{
+    background: none;
+    border: none;
+    font-size: 3.5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .contenido{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .expandible.expanded .contenido{
+    max-height: 250px;
+  }
+  
+  .expandible.expanded .mas{
+    transform: rotate(45deg);
+  }
+
 /*Footer*/
 
 footer {
@@ -170,7 +251,7 @@ footer {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 20px;
     text-align: left;

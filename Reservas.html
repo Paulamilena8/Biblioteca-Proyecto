@@ -14,7 +14,9 @@
         localStorage.setItem("categoria", categoria);
         window.location.href = "categorias.html";
       }
+
     </script>
+    
   </head>
   <body>
     <header>
@@ -72,40 +74,72 @@
         <section class="infoReservas">
             <h1>Informacion sobre las reservas</h1>
 
-            <article>
-                <h2>Reservas</h2>
+            <article class="expandible">
+              <div class="header">
+                
+                
+                <h2><img src="assets\images\bookmark.png" class="icono">    Reservas</h2>
+                <button class="mas">+</button>
+              </div>
+              <div class="contenido">
                 <p>Se permite reservar hasta <strong>3 libros</strong> al mismo tiempo. Las reservas tienen una <strong>validez de 48 horas</strong> desde que se realiza la reserva. Si no se recoge en ese plazo, la reserva se cancela automáticamente.</p>
+              </div>
             </article>
 
-            <article>
-                <h2>¿Cómo hacer una reserva?</h2>
+            <article class="expandible">
+              <div class="header">
+                <h2><img src="assets\images\libro.png" class="icono">    ¿Cómo hacer una reserva?</h2>
+                <button class="mas">+</button>
+              </div>
+              <div class="contenido">
                 <ol>
                   <li>Accede al <strong>catálogo en línea</strong> desde el sitio web oficial de la biblioteca.</li>
                   <li>Busca el libro que deseas reservar.</li>
                   <li>Si el libro está disponible, haz clic en el botón <strong>“Reservar”</strong>.</li>
                   <li>Tienes <strong>48 horas</strong> para recogerlo desde la reserva.</li>
                 </ol>
-                <a class="dropdown-item" info-categoria="todos" onclick="categorias('todos')" id="cat">Catálogo de libros</a>
+                <a class="dropdown-item" info-categoria="todos" onclick="categorias('todos')" id="cat">Catálogo de libros</a>              </div>
             </article>
 
-            <article>
-                <h2>Tiempo máximo de préstamo</h2>
+            <article class="expandible">
+              <div class="header">
+                <h2><img src="assets\images\reloj.png" class="icono">    Tiempo máximo de préstamo</h2>
+                <button class="mas">+</button>
+              </div>
+              <div class="contenido">
                 <p>El préstamo estándar de libros es de <strong>30 días </strong>. Puede realizarse una <strong>renovación única por 7 días adicionales</strong>, siempre que no haya reservas de otros usuarios.</p>
+              </div>
             </article>
 
-            <article>
-                <h2>Renovaciones</h2>
+            <article class="expandible">
+              <div class="header">
+                <h2><img src="assets\images\calendario.png" class="icono">   Renovaciones</h2>
+                <button class="mas">+</button>
+              </div>
+              <div class="contenido">
                 <p>Las renovaciones pueden hacerse <strong>presencialmente o desde el portal web</strong> de la biblioteca. Deben realizarse <strong>antes de la fecha de vencimiento</strong>. </p>
+              </div>
             </article>
 
-            <article>
-                <h2>Devoluciones</h2>
+            
+            <article class="expandible">
+              <div class="header">
+                <h2><img src="assets\images\devolucion.png" class="icono">     Devoluciones</h2>
+                <button class="mas">+</button>
+              </div>
+              <div class="contenido">
                 <p>Los libros deben devolverse en el mostrador o en el <strong>buzón de devoluciones</strong> si está disponible.</p>
+              </div>
             </article>
 
-            <article>
-                <h2>Retrasos y sanciones</h2>
-                <p>Por cada día de retraso en la devolución, se aplicará una <strong>penalización de 1 día sin poder realizar préstamos ni reservas</strong>. Si el retraso supera los <strong>7 días</strong>, la cuenta será suspendida hasta por una semana. Los libros perdidos o dañados deben ser <strong>repuestos o abonados económicamente</strong>.</p>
+              <article class="expandible">
+                <div class="header">
+                  <h2><img src="assets\images\sancion.png" class="icono">    Retrasos y sanciones</h2>
+                  <button class="mas">+</button>
+                </div>
+                <div class="contenido">
+                  <p>Por cada día de retraso en la devolución, se aplicará una <strong>penalización de 1 día sin poder realizar préstamos ni reservas</strong>. Si el retraso supera los <strong>7 días</strong>, la cuenta será suspendida hasta por una semana. Los libros perdidos o dañados deben ser <strong>repuestos o abonados económicamente</strong>.</p>
+                </div>
               </article>
 
             
@@ -160,5 +194,14 @@
         </div>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script>
+    document.querySelectorAll('.expandible').forEach(article => {
+      const button = article.querySelector('.mas');
+      button.addEventListener('click', () => {
+        article.classList.toggle('expanded');
+      });
+    });
+  </script>
+  
   </body>
 </html>

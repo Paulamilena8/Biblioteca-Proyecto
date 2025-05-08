@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <!--links para bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- links para nuestro css y script-->
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@600&display=swap" rel="stylesheet">
+        <script src="js/contacto.js" defer></script>
+  </head>
+  
+  <header>
+    <div id="dLogo"><img src="assets/images/logo.png" alt="" id="tamLogo"></div>
+     <!--nav-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Botón hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Contenido colapsable -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorías
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" info-categoria="todos" onclick="categorias('todos')">Todos</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('accion')">Acción</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('fantasia')">Fantasía</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('historia')">Historia</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('ciencia')">Ciencia</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('infantil')">Infantil</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('arte')">Arte</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Reservas.html">Reservas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="perfil.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <section>
+      <div class="formulario">
+        <h3>Sugerencias y Reclamaciones</h3>
+        <form action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+    
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="tipo">Tipo de sugerencia:</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">-- Selecciona una opción --</option>
+            <option value="libros">Recomendación de libros</option>
+            <option value="servicio">Mejora de servicios</option>
+            <option value="infraestructura">Infraestructura</option>
+            <option value="otro">Otro</option>
+          </select>
+    
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu sugerencia aquí..."></textarea>
+    
+          <button class="boton" type="submit">Enviar sugerencia</button>
+        </form>
+      </div>
+    </section>
+
+    <h2>Preguntas frecuentes </h2>
+    <section class="infoReservas">
+      <article class="expandible">
+        <div class="header">
+          <h4>¿Es posible llevar a mi mascota? </h4>
+          <button class="mas">+</button>
+        </div>
+        <div class="contenido">
+          <p>Dentro de la biblioteca no es posible estar acompañado de tu mascota,
+             pero la cafeteria que se encuentra junto a la entrada principal si es Pet friendly  </p>
+        </div>
+      </article>
+
+      <article class="expandible">
+        <div class="header">
+          <h4>¿Cuántos articulos puedo Reservar al tiempo? </h4>
+          <button class="mas">+</button>
+        </div>
+        <div class="contenido">
+          <p>Una vez te encuentres registrado, podrás resevar hasta 4 articulos  </p>
+        </div>
+      </article>
+
+      <article class="expandible">
+        <div class="header">
+          <h4>¿Puede devolver otra persona mis préstamos en mi nombre? </h4>
+          <button class="mas">+</button>
+        </div>
+        <div class="contenido">
+          <p>Sí. Además, para la devolución de materiales no es necesario presentar el carné de la biblioteca.  </p>
+        </div>
+      </article>
+
+      <article class="expandible">
+        <div class="header">
+          <h4>¿Cuánto cuesta el carné? </h4>
+          <button class="mas">+</button>
+        </div>
+        <div class="contenido">
+          <p> El carné de bibliotecas es gratuito. </p>
+        </div>
+      </article>
+
+    </section>
+
+  </body>
+  
+<footer>
+    <div class="footer-container">
+      <!-- Aviso Legal -->
+      <div class="footer-column">
+        <h5>Aviso Legal</h5>
+        <p>Esta biblioteca cumple con las normativas de protección de datos y derechos de autor.</p>
+        <a href="#">Más información</a>
+      </div>
+  
+      <!-- Contacto y Horario de Atención -->
+      <div class="footer-column">
+        <h5>Contacto</h5>
+        <p>Email: contacto@biblioteca.com</p>
+        <p>Tel: +123 456 789</p>
+        <p>Lunes a Viernes: 9:00 AM - 7:00 PM</p>
+        <p>Sábados: 10:00 AM - 5:00 PM</p>
+      </div>
+  
+      <!-- Sugerencias -->
+      <div class="footer-column">
+        <h5>Sugerencias y quejas</h5>
+        <a href="Contacto.html">Más información</a>
+      </div>
+  
+      <!-- Redes Sociales -->
+  <!-- Redes Sociales -->
+      <div class="footer-column">
+        <h5>Redes Sociales</h5>
+        <a href="#" target="_blank"><i class="fab fa-facebook-f" id="icono_footer"></i> Facebook</a>
+        <a href="#" target="_blank"><i class="fab fa-twitter" id="icono_footer"></i> Twitter</a>
+        <a href="#" target="_blank"><i class="fab fa-instagram" id="icono_footer"></i> Instagram</a>
+      </div>
+  
+  
+      <!-- Ubicación -->
+      <div class="footer-column">
+        <h5>Visítanos en</h5>
+        <p>Calle 123, Madrid, España</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.2642819420753!2d-3.668270188396014!3d40.44728725365984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229f012851247%3A0x4e340087fdbc732e!2sDIGITECH%20MADRID!5e0!3m2!1ses-419!2ses!4v1745778078405!5m2!1ses-419!2ses"
+         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Biblioteca Pública. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  </html>

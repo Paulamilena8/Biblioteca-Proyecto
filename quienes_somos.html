@@ -26,38 +26,37 @@
   <header>
     <div id="dLogo"><img src="assets/images/logo.png" alt="" id="tamLogo"></div>
      <!--nav-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        
+        <!-- Botón hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Contenido colapsable -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categorías
               </a>
               <ul class="dropdown-menu">
-                <li>
-                    <a class="dropdown-item" info-categoria="todos" onclick="categorias('todos')">Todos</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html" info-categoria="accion" onclick="categorias('accion')">Acción</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html" info-categoria="fantasia" onclick="categorias('fantasia')">Fantasia</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html" info-categoria="historia" onclick="categorias('historia')">Historia</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html" info-categoria="ciencia" onclick="categorias('ciencia')">Ciencia</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html" info-categoria="infantil" onclick="categorias('infantil')">Infantil</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html" info-categoria="arte" onclick="categorias('arte')">Arte</a></li>
+                <li><a class="dropdown-item" info-categoria="todos" onclick="categorias('todos')">Todos</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('accion')">Acción</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('fantasia')">Fantasía</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('historia')">Historia</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('ciencia')">Ciencia</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('infantil')">Infantil</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('arte')">Arte</a></li>
               </ul>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Actividades.html">Actividades</a>
-              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Actividades.html">Actividades</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
             </li>
@@ -67,8 +66,10 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="perfil.html">Perfil</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+            </li>
           </ul>
-          
         </div>
       </div>
     </nav>
@@ -134,7 +135,7 @@
     <!-- Sugerencias -->
     <div class="footer-column">
       <h5>Sugerencias y quejas</h5>
-      <a href="#">Más información</a>
+      <a href="Contacto.html">Más información</a>
     </div>
 
     <!-- Redes Sociales -->

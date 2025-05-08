@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     usuario = JSON.parse(localStorage.getItem("usuario"));
 
+
     if(usuario==null){
         usuario = {
             favoritos : [],
@@ -21,8 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
             email:"",
             fecha:"Enero 2025",
             devueltos:"",
-        };    
+        };
+        let devueltos=0;
+        localStorage.setItem("devueltos",devueltos);
     }
+ 
 
     
     localStorage.setItem("usuario", JSON.stringify(usuario));
@@ -55,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
         //iniciamos la funcion de rellenar el carousel
         carousel();
         recomendaciones();
+        novedades();
+        masLeidos();
     });
 
 
@@ -99,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let contenedorCartas =document.getElementById('cartas-container');
 
-        for(let i=0;i<5;i++){
+        for(let i=2;i<12;i++){
             let tituloCarta=titulos[i];
             let autorCarta=autores[i];
             let imagenURLCarta=imagenes[i];
@@ -127,14 +133,70 @@ document.addEventListener('DOMContentLoaded', function() {
         
     };
 
-    /*preguntas frecuentes- expandible */
+    function novedades(){
 
-    document.querySelectorAll('.expandible').forEach(article => {
-      const button = article.querySelector('.mas');
-      button.addEventListener('click', () => {
-        article.classList.toggle('expanded');
-      });
-    });
+      let contenedorCartas =document.getElementById('cartas-container-novedades');
+
+      for(let i=20;i<30;i++){
+          let tituloCarta=titulos[i];
+          let autorCarta=autores[i];
+          let imagenURLCarta=imagenes[i];
+          let id=ids[i];
+
+          console.log("cartas" +tituloCarta, autorCarta, imagenURLCarta);
+
+
+          contenedorCartas.innerHTML+=`      
+          <div class="grid-item">
+              <div class="card">
+              <div class="contenedor-imagen" onclick="verDetalleLibro('${id}')">
+              <img src="${imagenURLCarta}" class="card-img-top" alt="imagen del libro ${tituloCarta}" title="imagen del libro ${tituloCarta}">
+              </div>
+              <div class="card-body">
+                  <h5 class="card-title">${tituloCarta}</h5>
+                  <p class="card-text"><em>${autorCarta}</em></p>
+                  <a href="#" class="btn btn-primary" onclick="favorito('${id}','${tituloCarta}')"><i class="bi bi-bookmark-heart-fill"></i>
+                  </a>
+                  <a href="#" class="btn btn-secondary" onclick="reservar('${id}','${tituloCarta}')">Reservar</a>
+              </div>
+              </div>
+          </div>`;
+      }
+      
+  };
+  function masLeidos(){
+
+    let contenedorCartas =document.getElementById('cartas-container-masleidos');
+
+    for(let i=40;i<50;i++){
+        let tituloCarta=titulos[i];
+        let autorCarta=autores[i];
+        let imagenURLCarta=imagenes[i];
+        let id=ids[i];
+
+        console.log("cartas" +tituloCarta, autorCarta, imagenURLCarta);
+
+
+        contenedorCartas.innerHTML+=`      
+        <div class="grid-item">
+            <div class="card">
+            <div class="contenedor-imagen" onclick="verDetalleLibro('${id}')">
+            <img src="${imagenURLCarta}" class="card-img-top" alt="imagen del libro ${tituloCarta}" title="imagen del libro ${tituloCarta}">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">${tituloCarta}</h5>
+                <p class="card-text"><em>${autorCarta}</em></p>
+                <a href="#" class="btn btn-primary" onclick="favorito('${id}','${tituloCarta}')"><i class="bi bi-bookmark-heart-fill"></i>
+                </a>
+                <a href="#" class="btn btn-secondary" onclick="reservar('${id}','${tituloCarta}')">Reservar</a>
+            </div>
+            </div>
+        </div>`;
+    }
+    
+};
+
+    
 });
 
 function categorias(categoria){

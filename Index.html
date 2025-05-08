@@ -23,10 +23,15 @@
   <header>
     <div id="dLogo"><img src="assets/images/logo.png" alt="" id="tamLogo"></div>
      <!--nav-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        
+        <!-- Botón hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Contenido colapsable -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav">
             <li class="nav-item">
@@ -37,24 +42,18 @@
                 Categorías
               </a>
               <ul class="dropdown-menu">
-                <li>
-                    <a class="dropdown-item" info-categoria="todos" onclick="categorias('todos')">Todos</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html"  onclick="categorias('accion')">Acción</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html"  onclick="categorias('fantasia')">Fantasia</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html"  onclick="categorias('historia')">Historia</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html"  onclick="categorias('ciencia')">Ciencia</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html"  onclick="categorias('infantil')">Infantil</a></li>
-                <li>
-                    <a class="dropdown-item" href="categorias.html"  onclick="categorias('arte')">Arte</a></li>
+                <li><a class="dropdown-item" info-categoria="todos" onclick="categorias('todos')">Todos</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('accion')">Acción</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('fantasia')">Fantasía</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('historia')">Historia</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('ciencia')">Ciencia</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('infantil')">Infantil</a></li>
+                <li><a class="dropdown-item" href="categorias.html" onclick="categorias('arte')">Arte</a></li>
               </ul>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Actividades.html">Actividades</a>
-              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Actividades.html">Actividades</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
             </li>
@@ -64,8 +63,10 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="perfil.html">Perfil</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+            </li>
           </ul>
-          
         </div>
       </div>
     </nav>
@@ -94,6 +95,7 @@
           <span  class="visually-hidden">Next</span>
         </button>
       </div>
+    </section>
       
       <div class="cartas">
         <h2>Recomendaciones</h2>
@@ -102,20 +104,25 @@
           <!-- cargado desde js-->        
         </div>
       </div>
-    </section>    
+ 
+
+    <div class="cartas"  style="margin-top: 0px;">
+      <h2>Novedades</h2>
+      <!-- card container-->
+      <div id="cartas-container-novedades" class="grid-container" >
+        <!-- cargado desde js-->        
+      </div>
+    </div> 
+
+    <div class="cartas"  style="margin-top: 0px;">
+      <h2>Mas Leidos</h2>
+      <!-- card container-->
+      <div id="cartas-container-masleidos" class="grid-container" >
+        <!-- cargado desde js-->        
+      </div>
+    </div>  
    
-    <h2>Preguntas frecuentes </h2>
-    <section class="infoReservas">
-      <article class="expandible">
-        <div class="header">
-          <h3>¿Es posible llevar a mi mascota? </h3>
-          <button class="mas">+</button>
-        </div>
-        <div class="contenido">
-          <p>No. </p>
-        </div>
-      </article>
-    </section>
+   
 
 </body>
 
@@ -140,7 +147,7 @@
     <!-- Sugerencias -->
     <div class="footer-column">
       <h5>Sugerencias y quejas</h5>
-      <a href="#">Más información</a>
+      <a href="Contacto.html">Más información</a>
     </div>
 
     <!-- Redes Sociales -->
